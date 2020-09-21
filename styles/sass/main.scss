@@ -1,0 +1,664 @@
+@import "fonts";
+@import "normalize";
+@import "base";
+@import "vars";
+
+header {
+    padding-top: 4.6vh;
+    padding-bottom: 3.9vh;
+}
+
+.wr-home {
+    position: relative;
+    z-index: 10;
+    height: 100vh;
+    background-image: linear-gradient(225deg, rgba(68,46,130,0.9) 0%, rgba(237,27,51,0.9) 98%),
+    url("../../media/bg/bg-home.jpg");
+    background-size: cover;
+    background-position: bottom left;
+    &::after {
+        content: '';
+        position: absolute;
+        left: 39%;
+        right: 8%;
+        top: 17%;
+        bottom: 0;
+        z-index: -5;
+        background-image: url("../../media/bg/worker-home.png");
+        background-repeat: no-repeat;
+        background-position: bottom ;
+        background-size: contain;
+    } 
+}
+
+.container-header {
+    max-width: 1680px;
+    box-sizing: border-box;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-family: "MontsSemiBold", sans-serif;
+    font-size: 42px;
+    color: $color-font-button;
+    img {
+        margin-bottom: 1vh;
+        width: 72px;
+    }
+    &:hover {
+        color: $hover-color-font-a;
+        text-decoration: none;
+    }
+}
+
+.wr-home-menu {
+    display: flex;
+    align-items: center;
+    :hover {
+        outline: none; 
+        background-color: transparent;
+    }
+}
+
+.home-navigation ul {
+    margin-top: 2vh;
+    display: flex;
+    align-items: center;
+    li {
+        margin-left: 40px;
+        a {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            box-sizing: border-box;
+            font-family: "MontsSemiBold", sans-serif;
+            color: $color-font-button;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.wr-home-button {
+    margin-left: 40px;
+    margin-top: 5px;
+    padding: 0; 
+    img {
+        width: 30px;
+    }
+}
+
+.container-preamble {
+    max-width: 1380px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 12.7vh;
+    padding-bottom: 25.7vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.wr-intro-preview {
+    margin-bottom: 5.8vh;
+    width: 60%;
+}
+
+.wr-intro-title {
+    margin-bottom: .8vh;
+    max-width: 600px;
+    font-family: "PalatLin", sans-serif;
+    font-size: 43px;
+    font-weight: 100;
+    color: $first-font-color;
+}
+
+.wr-intro-description {
+    margin-bottom: 7vh;
+    font-size: 23px;
+    color: $first-font-color;
+    line-height: 3.8vh;
+    max-width: 750px;
+}
+
+.wr-intro-buttons{
+    display: flex;
+    justify-content: space-around;
+    a {
+        height: 60px;
+        width: 197px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: $color-font-button;
+        text-transform: uppercase;
+        border-radius: 42px;
+    }    
+    .red-button {
+        background-color: #f42267;
+        margin-left: 6.7vh;
+     }
+    .violet-button {
+        background-color: #5e3088;
+        margin-left: 2.7vh;
+    }
+}
+
+// section-2
+
+.bg-section-2-3 {
+    background-image: url("../../media/bg/bg-section-2-3.png");
+    background-position-y: -72px;
+    background-position-x: 12px;
+    background-repeat: no-repeat;
+}
+
+.wr-work {
+    padding-top: 7.2vh;
+    padding-bottom: 12.4vh;
+    position: relative;
+    .container-custom {
+        display: flex;
+    }
+    &::after {
+        content: '';
+        position: absolute;   
+        left: 55%;
+        top: 10%;
+        right: 8%;
+        bottom: 0;
+        background-image: url("../../media/bg/home-watch.png");
+        background-repeat: no-repeat;
+        background-position: bottom ;
+        background-size: contain;
+    } 
+}
+
+.wr-work-content {
+    margin-top: 2.5vh;
+    max-width: 575px;
+    .wr-work-title {
+        margin-bottom: .5vh;
+        font-family: "PalatLin", sans-serif;
+        font-size: 33px;
+        font-weight: 100;
+    }
+}
+
+#tabContainer {
+    height: 215px;
+}
+
+#tabs {
+    ul {
+        margin-bottom: 2.2vh;
+        padding-left: 0;
+        display: flex;
+        li {
+            margin-right: 1px; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 45px;
+            width: 130px;
+            font-family: "MontsSemiBold", sans-serif;
+            font-size: 14px;
+            text-transform: uppercase;
+            border-radius: 33px; 
+            &:hover {
+                cursor: pointer;
+            }
+            &.tabActiveHeader{
+                background-color: $color-button;
+                cursor: pointer;
+                color: $color-font-button;
+            }
+        }       
+    }
+}
+
+.tabs-description {
+    position: relative;
+    margin-bottom: 5.4vh;
+    font-size: 14px;
+    line-height: 2.7vh;
+    letter-spacing: -.1px;
+    font-weight: 800;
+    display: none;
+    &:target {
+        display: block;
+    }
+}
+
+.tabs-item {
+    position: relative;
+    &::before {
+    content: "";
+    position: absolute;
+    background-color: $color-button;
+   }
+}
+
+
+// section-3
+
+.wr-achievements {
+    position: relative;
+    &::after {
+        content: "";
+        right: 0;
+        left: 0;
+        bottom: 0;
+        top: 0;
+        position: absolute;
+        background-color: #4b2d7f;
+        z-index: -15;
+    }
+}
+
+.container-achievements {
+    max-width: 1500px;
+    padding: 0 15px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.wr-achievements-projects {
+    position: relative;
+    box-sizing: border-box;
+    padding-top: 9.4vh;
+    padding-bottom: 8.6vh;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &:hover {
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #40286a;
+            z-index: -10;
+        }
+    }
+    picture {
+        margin-bottom: 1.3vh;
+        width: 65px;
+        height: 75px;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}
+
+.wr-achievements-amount {
+    margin-bottom: 0;
+    font-size: 51px;
+    color: $first-font-color;
+    font-weight: 800;
+}
+
+.wr-achievements-description {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.41);
+    width: 67%;
+    text-align: center;
+    line-height: 2.5vh;
+}
+
+// section-4
+
+.wr-ad {
+    padding-top: 7.5vh;
+    padding-bottom: 9.2vh;
+    background-image: url('../../media/bg/bg-section-4.jpg');
+    background-size: cover;
+    position: relative;
+    z-index: 10;
+    color: $first-font-color;
+    .container-custom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: #6766c2;
+        opacity: 0.6;
+        z-index: -5;
+    } 
+}
+
+.wr-ad-slogan {
+    margin-bottom: 0;
+    max-width: 450px;
+    font-family: "PalatLin";
+    font-size: 47px;
+    word-spacing: -3.8px;
+    letter-spacing: 1.6px;
+}
+.wr-ad-description {
+    margin-bottom: 5vh;
+    font-size: 20px;
+    line-height: 3.6vh;
+    width: 80%;
+    word-spacing: 1px;
+}
+
+// section-5
+
+.wr-media {
+    padding-top: 9vh;
+    padding-bottom: 13.2vh;
+    .container-custom {
+        display: flex;
+    }
+}
+
+.wr-media-description {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-right: 4.2vh;
+}
+
+.wr-media-title {
+    margin-bottom: 0;
+    font-family: "PalatLin";
+    font-size: 32px;
+}
+
+.wr-media-about {
+    font-size: 18px;
+    line-height: 2.7vh;
+    margin-bottom: 5.7vh;
+}
+
+.wr-media-block {
+    display: flex;
+    max-width: 600px;
+}
+
+.wr-media-block-half {
+    max-width: 300px;
+    .icon-conversation {
+        img {
+            margin-bottom: 1.1vh;
+            width: 75px;
+            height: 70px;
+        }
+    }
+    .icon-color-shout {
+        width: 65px;
+        height: 75px;
+        img {   
+            margin-bottom: .4vh;   
+            width: 65px;
+            height: 75px;
+        }
+    }
+}
+
+.wr-media-block-title {
+    font-family: "MontsSemiBold";
+    font-size: 25px;
+    margin-bottom: 0.3vh;
+    word-spacing: -4px;
+}
+
+.wr-media-block-description {
+    font-size: 14px;
+    line-height: 2.7vh;
+    width: 86%;
+    margin-bottom: 3.8vh
+}
+
+.action-block {
+    max-width: 555px;
+    height: 460px;
+    margin-top: 9.5vh;
+    position: relative;
+    video {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+.button-play-video {
+    height: 95px;
+    width: 95px;
+    background-color:  $color-button;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    &::after {
+        content: "";
+        background-image: url("../../media/icons/button-play.png");
+        position: absolute;
+        height: 40px;
+        width: 35px;
+        top: 50%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+// section-6
+
+.wr-works {
+padding-top: 7.3vh;
+padding-bottom: 13.2vh;
+background-color: #f1f1f1;
+}
+
+.wr-works-head {
+    margin-bottom: 3.1vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    p {
+        font-size: 20px;
+        max-width: 970px;
+        text-align: center;
+        line-height: 3.4vh;
+    }
+   
+}
+
+.wr-works-grid-examples {
+    margin-bottom: 9.6vh;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 377px));
+    grid-template-rows: repeat(3, minmax(100px, 316px));
+    // Почему для rows не работает minmax, а для columns работает?
+    grid-gap: 33.5px;
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+// .wr-works-grid {
+//     #tabContainer {
+//     }
+//     #tabs {
+//         ul {
+//             margin-bottom: 2.2vh;
+//             padding-left: 0;
+//             display: flex;
+//             justify-content: center;
+//             li {
+//                 margin-right: 1px; 
+//                 display: flex;
+//                 justify-content: center;
+//                 align-items: center;
+//                 height: 45px;
+//                 width: 130px;
+//                 font-family: "MontsSemiBold", sans-serif;
+//                 font-size: 14px;
+//                 text-transform: uppercase;
+//                 border-radius: 33px; 
+//                 &:hover {
+//                     cursor: pointer;
+//                 }
+//                 &.tabActiveHeader{
+//                     background-color: $color-button;
+//                     cursor: pointer;
+//                     color: $color-font-button;
+//                 }
+//             }       
+//         }
+//     }
+// }
+
+
+.wr-works-button {
+    display: flex;
+    justify-content: center;
+}
+
+// section-7
+
+.wr-logos {
+    padding-top: 12vh;
+    padding-bottom: 11.5vh;
+    background-color: #4b2d7f;
+    .container-custom {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(100px, 166px));
+        grid-template-rows: repeat(2, minmax(40px, 80px));
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        grid-column-gap: 100px;
+        grid-row-gap: 55px;
+    }
+}
+
+//section-8 
+
+.wr-clients {
+    position: relative;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.81);
+    background-position: top;
+    background-image: url("../../media/bg/bg-section-8.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: color;
+    &::before {
+        content: '';
+        position: absolute;
+        left: 43%;
+        right: 8%;
+        top: 3%;
+        bottom: 0;
+        z-index: -6;
+        background-image: url("../../media/bg/bg-client.png");
+        background-repeat: no-repeat;
+        background-position: bottom ;
+        background-size: contain;
+    } 
+    &::after {
+        content: '';
+        position: absolute;
+        left: 43%;
+        right: 8%;
+        top: 3%;
+        bottom: 0;
+        z-index: -5;
+        background-image: url("../../media/bg/client.png");
+        background-repeat: no-repeat;
+        background-position: bottom ;
+        background-size: contain;
+    }
+}
+
+.wr-clients {
+    padding-top: 6vh;
+    padding-bottom: 8.3vh;
+    .container-custom {
+        padding-left: 12vh;
+        color: $first-font-color;
+    }
+} 
+
+.wr-clients-slogan {
+    margin-bottom: 0;
+    max-width: 400px;
+    font-family: "PalatLin", sans-serif;
+    font-size: 41px;
+}
+
+.wr-clients-heading {
+    margin-bottom: 5.5vh;
+    font-family: "MontsSemiBold", sans-serif;
+    font-size: $font-large;
+}
+
+.wr-clients-description {
+    margin-bottom: 7vh;
+    max-width: 600px;
+    display: flex;
+    font-family: "MontsLight", sans-serif;
+    font-size: 22px;
+    line-height: 3vh;
+    span {
+        margin-top: 2.5vh;
+        font-size: 140px;
+        color: $color-button;
+        font-weight: 600;
+    }
+}
+
+.wr-clients {
+    .container-custom {
+        img {      
+            margin-left: 4.7vh;
+            margin-bottom: 2.3vh;
+            width: 128px;
+        }
+    }
+}
+
+.wr-clients-full-name {
+    margin-left: 4.4vh;
+    font-family: "MontsLight", sans-serif;
+    max-width: 250px;
+    font-size: 25px;
+    word-spacing: -2px;
+}
+
+@import "./media"; //всегда в конце
+

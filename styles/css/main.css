@@ -1,0 +1,1075 @@
+@font-face {
+  font-family: "MontsReg";
+  src: url("../../fonts/montserrat-regular-webfont.woff2") format("woff2"), url("../../fonts/montserrat-regular-webfont.woff") format("woff"), url("../../fonts/Montserrat-Regular.ttf") format("ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "MontsLight";
+  src: url("../../fonts/montserrat-light-webfont.woff2") format("woff2"), url("../../fonts/montserrat-light-webfont.woff") format("woff"), url("../../fonts/Montserrat-Light.ttf") format("ttf");
+  font-style: italic;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "MontsSemiBold";
+  src: url("../../fonts/montserrat-semibold-webfont.woff2") format("woff2"), url("../../fonts/montserrat-semibold-webfont.woff") format("woff"), url("../../fonts/Montserrat-SemiBold.ttf") format("ttf");
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face {
+  font-family: "PopSemiBold";
+  src: url("../../fonts/poppins-semibold-webfont.woff2") format("woff2"), url("../../fonts/poppins-semibold-webfont.woff") format("woff"), url("../../fonts/Poppins-SemiBold.ttf") format("ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "PalatLin";
+  src: url("../../fonts/PalatinoLinotype.woff2") format("woff2"), url("../../fonts/PalatinoLinotype.woff") format("woff"), url("../../fonts/Palatino Linotype.ttf") format("ttf");
+  font-style: italic;
+  font-weight: 100;
+}
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+.container-custom {
+  max-width: 1230px;
+  box-sizing: border-box;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "MontsReg", sans-serif;
+  background-color: #fff;
+  font-size: 16px;
+  color: #333;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.button-read-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 47px;
+  width: 146px;
+  font-family: "MontsReg", sans-serif;
+  color: #fff;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 12px;
+  background-color: #f42267;
+}
+
+.button-read-more:focus {
+  background-color: #ff5990;
+  color: #fff;
+  transition: 0.4s;
+}
+
+.button-read-more:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 3.3vh;
+  line-height: 7.1vh;
+  font-family: "MontsSemiBold", sans-serif;
+  font-size: 65px;
+  color: #fff;
+  letter-spacing: -0.5px;
+  max-width: 750px;
+}
+
+h2 {
+  margin-bottom: 2.5vh;
+  font-family: "MontsSemiBold", sans-serif;
+  font-size: 50px;
+  word-spacing: -2px;
+  letter-spacing: -1px;
+  line-height: 54px;
+}
+
+h3 {
+  margin-bottom: 3.6vh;
+  font-size: 24px;
+  color: #fff;
+  width: 60%;
+  text-align: center;
+  line-height: 1.1;
+  word-spacing: 6px;
+}
+
+h4 {
+  margin-bottom: 3.3vh;
+  font-family: "MontsSemiBold";
+  font-size: 49px;
+  color: #fff;
+  letter-spacing: -0.6px;
+}
+
+h5 {
+  margin-bottom: 2.5vh;
+  font-family: "PopSemiBold";
+  font-size: 49px;
+  word-spacing: 9px;
+  letter-spacing: -2px;
+  line-height: 52px;
+}
+
+h6 {
+  margin-bottom: 3vh;
+  max-width: 500px;
+  font-family: "MontsSemiBold";
+  font-size: 49px;
+}
+
+header {
+  padding-top: 4.6vh;
+  padding-bottom: 3.9vh;
+}
+
+.wr-home {
+  position: relative;
+  z-index: 10;
+  height: 100vh;
+  background-image: linear-gradient(225deg, rgba(68, 46, 130, 0.9) 0%, rgba(237, 27, 51, 0.9) 98%), url("../../media/bg/bg-home.jpg");
+  background-size: cover;
+  background-position: bottom left;
+}
+.wr-home::after {
+  content: "";
+  position: absolute;
+  left: 39%;
+  right: 8%;
+  top: 17%;
+  bottom: 0;
+  z-index: -5;
+  background-image: url("../../media/bg/worker-home.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+
+.container-header {
+  max-width: 1680px;
+  box-sizing: border-box;
+  padding: 0 15px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-family: "MontsSemiBold", sans-serif;
+  font-size: 42px;
+  color: #fff;
+}
+.logo img {
+  margin-bottom: 1vh;
+  width: 72px;
+}
+.logo:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.wr-home-menu {
+  display: flex;
+  align-items: center;
+}
+.wr-home-menu :hover {
+  outline: none;
+  background-color: transparent;
+}
+
+.home-navigation ul {
+  margin-top: 2vh;
+  display: flex;
+  align-items: center;
+}
+.home-navigation ul li {
+  margin-left: 40px;
+}
+.home-navigation ul li a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+  font-family: "MontsSemiBold", sans-serif;
+  color: #fff;
+}
+.home-navigation ul li a:hover {
+  text-decoration: none;
+}
+
+.wr-home-button {
+  margin-left: 40px;
+  margin-top: 5px;
+  padding: 0;
+}
+.wr-home-button img {
+  width: 30px;
+}
+
+.container-preamble {
+  max-width: 1380px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 12.7vh;
+  padding-bottom: 25.7vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.wr-intro-preview {
+  margin-bottom: 5.8vh;
+  width: 60%;
+}
+
+.wr-intro-title {
+  margin-bottom: 0.8vh;
+  max-width: 600px;
+  font-family: "PalatLin", sans-serif;
+  font-size: 43px;
+  font-weight: 100;
+  color: #fff;
+}
+
+.wr-intro-description {
+  margin-bottom: 7vh;
+  font-size: 23px;
+  color: #fff;
+  line-height: 3.8vh;
+  max-width: 750px;
+}
+
+.wr-intro-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+.wr-intro-buttons a {
+  height: 60px;
+  width: 197px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 42px;
+}
+.wr-intro-buttons .red-button {
+  background-color: #f42267;
+  margin-left: 6.7vh;
+}
+.wr-intro-buttons .violet-button {
+  background-color: #5e3088;
+  margin-left: 2.7vh;
+}
+
+.bg-section-2-3 {
+  background-image: url("../../media/bg/bg-section-2-3.png");
+  background-position-y: -72px;
+  background-position-x: 12px;
+  background-repeat: no-repeat;
+}
+
+.wr-work {
+  padding-top: 7.2vh;
+  padding-bottom: 12.4vh;
+  position: relative;
+}
+.wr-work .container-custom {
+  display: flex;
+}
+.wr-work::after {
+  content: "";
+  position: absolute;
+  left: 55%;
+  top: 10%;
+  right: 8%;
+  bottom: 0;
+  background-image: url("../../media/bg/home-watch.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+
+.wr-work-content {
+  margin-top: 2.5vh;
+  max-width: 575px;
+}
+.wr-work-content .wr-work-title {
+  margin-bottom: 0.5vh;
+  font-family: "PalatLin", sans-serif;
+  font-size: 33px;
+  font-weight: 100;
+}
+
+#tabContainer {
+  height: 215px;
+}
+
+#tabs ul {
+  margin-bottom: 2.2vh;
+  padding-left: 0;
+  display: flex;
+}
+#tabs ul li {
+  margin-right: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  width: 130px;
+  font-family: "MontsSemiBold", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 33px;
+}
+#tabs ul li:hover {
+  cursor: pointer;
+}
+#tabs ul li.tabActiveHeader {
+  background-color: #f42267;
+  cursor: pointer;
+  color: #fff;
+}
+
+.tabs-description {
+  position: relative;
+  margin-bottom: 5.4vh;
+  font-size: 14px;
+  line-height: 2.7vh;
+  letter-spacing: -0.1px;
+  font-weight: 800;
+  display: none;
+}
+.tabs-description:target {
+  display: block;
+}
+
+.tabs-item {
+  position: relative;
+}
+.tabs-item::before {
+  content: "";
+  position: absolute;
+  background-color: #f42267;
+}
+
+.wr-achievements {
+  position: relative;
+}
+.wr-achievements::after {
+  content: "";
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  position: absolute;
+  background-color: #4b2d7f;
+  z-index: -15;
+}
+
+.container-achievements {
+  max-width: 1500px;
+  padding: 0 15px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.wr-achievements-projects {
+  position: relative;
+  box-sizing: border-box;
+  padding-top: 9.4vh;
+  padding-bottom: 8.6vh;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.wr-achievements-projects:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #40286a;
+  z-index: -10;
+}
+.wr-achievements-projects picture {
+  margin-bottom: 1.3vh;
+  width: 65px;
+  height: 75px;
+}
+.wr-achievements-projects picture img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.wr-achievements-amount {
+  margin-bottom: 0;
+  font-size: 51px;
+  color: #fff;
+  font-weight: 800;
+}
+
+.wr-achievements-description {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.41);
+  width: 67%;
+  text-align: center;
+  line-height: 2.5vh;
+}
+
+.wr-ad {
+  padding-top: 7.5vh;
+  padding-bottom: 9.2vh;
+  background-image: url("../../media/bg/bg-section-4.jpg");
+  background-size: cover;
+  position: relative;
+  z-index: 10;
+  color: #fff;
+}
+.wr-ad .container-custom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.wr-ad::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #6766c2;
+  opacity: 0.6;
+  z-index: -5;
+}
+
+.wr-ad-slogan {
+  margin-bottom: 0;
+  max-width: 450px;
+  font-family: "PalatLin";
+  font-size: 47px;
+  word-spacing: -3.8px;
+  letter-spacing: 1.6px;
+}
+
+.wr-ad-description {
+  margin-bottom: 5vh;
+  font-size: 20px;
+  line-height: 3.6vh;
+  width: 80%;
+  word-spacing: 1px;
+}
+
+.wr-media {
+  padding-top: 9vh;
+  padding-bottom: 13.2vh;
+}
+.wr-media .container-custom {
+  display: flex;
+}
+
+.wr-media-description {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-right: 4.2vh;
+}
+
+.wr-media-title {
+  margin-bottom: 0;
+  font-family: "PalatLin";
+  font-size: 32px;
+}
+
+.wr-media-about {
+  font-size: 18px;
+  line-height: 2.7vh;
+  margin-bottom: 5.7vh;
+}
+
+.wr-media-block {
+  display: flex;
+  max-width: 600px;
+}
+
+.wr-media-block-half {
+  max-width: 300px;
+}
+.wr-media-block-half .icon-conversation img {
+  margin-bottom: 1.1vh;
+  width: 75px;
+  height: 70px;
+}
+.wr-media-block-half .icon-color-shout {
+  width: 65px;
+  height: 75px;
+}
+.wr-media-block-half .icon-color-shout img {
+  margin-bottom: 0.4vh;
+  width: 65px;
+  height: 75px;
+}
+
+.wr-media-block-title {
+  font-family: "MontsSemiBold";
+  font-size: 25px;
+  margin-bottom: 0.3vh;
+  word-spacing: -4px;
+}
+
+.wr-media-block-description {
+  font-size: 14px;
+  line-height: 2.7vh;
+  width: 86%;
+  margin-bottom: 3.8vh;
+}
+
+.action-block {
+  max-width: 555px;
+  height: 460px;
+  margin-top: 9.5vh;
+  position: relative;
+}
+.action-block video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.button-play-video {
+  height: 95px;
+  width: 95px;
+  background-color: #f42267;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.button-play-video::after {
+  content: "";
+  background-image: url("../../media/icons/button-play.png");
+  position: absolute;
+  height: 40px;
+  width: 35px;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+}
+
+.wr-works {
+  padding-top: 7.3vh;
+  padding-bottom: 13.2vh;
+  background-color: #f1f1f1;
+}
+
+.wr-works-head {
+  margin-bottom: 3.1vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.wr-works-head p {
+  font-size: 20px;
+  max-width: 970px;
+  text-align: center;
+  line-height: 3.4vh;
+}
+
+.wr-works-grid-examples {
+  margin-bottom: 9.6vh;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 377px));
+  grid-template-rows: repeat(3, minmax(100px, 316px));
+  grid-gap: 33.5px;
+}
+.wr-works-grid-examples img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.wr-works-button {
+  display: flex;
+  justify-content: center;
+}
+
+.wr-logos {
+  padding-top: 12vh;
+  padding-bottom: 11.5vh;
+  background-color: #4b2d7f;
+}
+.wr-logos .container-custom {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(100px, 166px));
+  grid-template-rows: repeat(2, minmax(40px, 80px));
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  grid-column-gap: 100px;
+  grid-row-gap: 55px;
+}
+
+.wr-clients {
+  position: relative;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.81);
+  background-position: top;
+  background-image: url("../../media/bg/bg-section-8.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: color;
+}
+.wr-clients::before {
+  content: "";
+  position: absolute;
+  left: 43%;
+  right: 8%;
+  top: 3%;
+  bottom: 0;
+  z-index: -6;
+  background-image: url("../../media/bg/bg-client.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+.wr-clients::after {
+  content: "";
+  position: absolute;
+  left: 43%;
+  right: 8%;
+  top: 3%;
+  bottom: 0;
+  z-index: -5;
+  background-image: url("../../media/bg/client.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+
+.wr-clients {
+  padding-top: 6vh;
+  padding-bottom: 8.3vh;
+}
+.wr-clients .container-custom {
+  padding-left: 12vh;
+  color: #fff;
+}
+
+.wr-clients-slogan {
+  margin-bottom: 0;
+  max-width: 400px;
+  font-family: "PalatLin", sans-serif;
+  font-size: 41px;
+}
+
+.wr-clients-heading {
+  margin-bottom: 5.5vh;
+  font-family: "MontsSemiBold", sans-serif;
+  font-size: 49px;
+}
+
+.wr-clients-description {
+  margin-bottom: 7vh;
+  max-width: 600px;
+  display: flex;
+  font-family: "MontsLight", sans-serif;
+  font-size: 22px;
+  line-height: 3vh;
+}
+.wr-clients-description span {
+  margin-top: 2.5vh;
+  font-size: 140px;
+  color: #f42267;
+  font-weight: 600;
+}
+
+.wr-clients .container-custom img {
+  margin-left: 4.7vh;
+  margin-bottom: 2.3vh;
+  width: 128px;
+}
+
+.wr-clients-full-name {
+  margin-left: 4.4vh;
+  font-family: "MontsLight", sans-serif;
+  max-width: 250px;
+  font-size: 25px;
+  word-spacing: -2px;
+}
+
+/*# sourceMappingURL=main.css.map */
