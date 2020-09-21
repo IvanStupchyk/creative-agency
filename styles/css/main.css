@@ -963,6 +963,14 @@ header {
   object-position: center;
 }
 
+.tabs-3 ul {
+  display: flex;
+  justify-content: center;
+}
+.tabs-3 ul li {
+  margin-left: 3vh;
+}
+
 .wr-works-button {
   display: flex;
   justify-content: center;
