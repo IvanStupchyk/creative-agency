@@ -53,8 +53,12 @@ $(document).ready(function () {
 
 let videoPlayer = function () {    
     let video = document.getElementById('video');
-
+    let playButton = document.getElementById('play-pause');
     let playButtonBig = document.querySelector('.button-play-video');
+    let controlsContainer = document.querySelector('.action-block-controls');
+    let muteButton = document.getElementById('mute');
+    let seekBar = document.getElementById('seek-bar');
+    let range = document.querySelector('.active-range');
 
     let flipIcon = function (icon) {
         if (icon.classList.contains('flipped')) {
@@ -129,3 +133,4 @@ let videoPlayer = function () {
         }
     });    
 }
+

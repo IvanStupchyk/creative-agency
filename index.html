@@ -194,10 +194,23 @@
                 </div>
             </div>
             <div class="action-block">
-                <video src="./media/video/Norway.mp4.mp4" loop poster="./media/video/bg-video.jpg"></video>
+                <video id="video" loop poster="./media/video/bg-video.jpg" class="blur-video">
+                    <source src="./media/video/Norway.mp4.mp4" type="video/mp4">
+                </video>
                 <button class="button-play-video" role="button"></button>
                 <div class="action-block-controls">
-                    <button type="button" id="play-pause" class="play-pause"></button>
+                    <button type="button" id="play-pause" class="play-pause">
+                        <img class="play-video" src="./media/icons/play-icon.png" alt="icon play video">
+                        <img class="pause-video" src="./media/icons/pause-icon.png" alt="icon-pause-video">
+                    </button>
+                    <div class="range-video">
+                        <input type="range" id="seek-bar" value="0">
+                        <div class="active-range"></div>
+                    </div>
+                    <button type="button" id="mute" class="video-mute">
+                        <img class="on-mute" src="./media/icons/mute-on-small.png" alt="video-on-mute">
+                        <img class="off-mute" src="./media/icons/mute-small.png" alt="video-off-mute">
+                    </button>
                 </div>
             </div>
         </div>
