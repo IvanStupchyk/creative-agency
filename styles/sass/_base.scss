@@ -6,6 +6,12 @@
     padding: 0 15px;
     margin: 0 auto;
 }
+.company__container {
+    max-width: 1260px;
+    box-sizing: border-box;
+    padding: 0 15px;
+    margin: 0 auto;
+}
 
 body {
     font-family: $basic-font-family;
@@ -17,6 +23,9 @@ body {
 
 a {
     text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
 }
 
 
@@ -43,17 +52,15 @@ button {
     text-decoration: none;
     border-radius: 12px; 
     background-color: $color-button;
-}
-
-.button-read-more:focus {
-    background-color: $color-button-focus;
-    color: $color-font-button-focus;
-    transition: .4s;
-}
-
-.button-read-more:hover {
-    text-decoration: none;
-    color: $color-font-button-hover;
+    &:hover {
+        text-decoration: none;
+        color: #d6d4d4;;
+    }
+    &:focus {
+        background-color: $color-button-focus;
+        color: $color-font-button-focus;
+        transition: .4s;
+    }
 }
 
 h1 {

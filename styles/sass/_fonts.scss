@@ -26,6 +26,15 @@
 }
 
 @font-face {
+    font-family: "PopBold";
+    src: url("../../fonts/poppins-bold-webfont.woff2") format("woff2"),
+    url("../../fonts/poppins-bold-webfont.woff") format("woff"),
+    url("../../fonts/Poppins-Bold.ttf") format("ttf");
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
     font-family: "PopSemiBold";
     src: url("../../fonts/poppins-semibold-webfont.woff2") format("woff2"),
     url("../../fonts/poppins-semibold-webfont.woff") format("woff"),

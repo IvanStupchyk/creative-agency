@@ -17,6 +17,12 @@
   font-weight: bold;
 }
 @font-face {
+  font-family: "PopBold";
+  src: url("../../fonts/poppins-bold-webfont.woff2") format("woff2"), url("../../fonts/poppins-bold-webfont.woff") format("woff"), url("../../fonts/Poppins-Bold.ttf") format("ttf");
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face {
   font-family: "PopSemiBold";
   src: url("../../fonts/poppins-semibold-webfont.woff2") format("woff2"), url("../../fonts/poppins-semibold-webfont.woff") format("woff"), url("../../fonts/Poppins-SemiBold.ttf") format("ttf");
   font-style: normal;
@@ -378,6 +384,13 @@ template {
   margin: 0 auto;
 }
 
+.company__container {
+  max-width: 1260px;
+  box-sizing: border-box;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
 body {
   font-family: "MontsReg", sans-serif;
   background-color: #fff;
@@ -387,6 +400,9 @@ body {
 }
 
 a {
+  text-decoration: none;
+}
+a:hover {
   text-decoration: none;
 }
 
@@ -413,16 +429,14 @@ button:focus {
   border-radius: 12px;
   background-color: #f42267;
 }
-
+.button-read-more:hover {
+  text-decoration: none;
+  color: #d6d4d4;
+}
 .button-read-more:focus {
   background-color: #ff5990;
   color: #fff;
   transition: 0.4s;
-}
-
-.button-read-more:hover {
-  text-decoration: none;
-  color: #fff;
 }
 
 h1 {
@@ -528,8 +542,8 @@ header {
   width: 72px;
 }
 .logo:hover {
+  opacity: 0.8;
   color: #fff;
-  text-decoration: none;
 }
 
 .wr-home-menu {
@@ -557,7 +571,7 @@ header {
   color: #fff;
 }
 .home-navigation ul li a:hover {
-  text-decoration: none;
+  opacity: 0.7;
 }
 
 .wr-home-button {
@@ -567,6 +581,9 @@ header {
 }
 .wr-home-button img {
   width: 30px;
+}
+.wr-home-button:hover {
+  opacity: 0.7;
 }
 
 .container-preamble {
@@ -623,9 +640,15 @@ header {
   background-color: #f42267;
   margin-left: 6.7vh;
 }
+.wr-intro-buttons .red-button:hover {
+  color: #d6d4d4;
+}
 .wr-intro-buttons .violet-button {
   background-color: #5e3088;
   margin-left: 2.7vh;
+}
+.wr-intro-buttons .violet-button:hover {
+  color: #d6d4d4;
 }
 
 .bg-section-2-3 {
@@ -1090,6 +1113,7 @@ header {
 .tabs-3 ul {
   display: flex;
   justify-content: center;
+  margin-bottom: 9.6vh;
 }
 .tabs-3 ul li {
   margin-left: 5vh;
@@ -1202,6 +1226,146 @@ header {
   max-width: 250px;
   font-size: 25px;
   word-spacing: -2px;
+}
+
+.wr-form {
+  padding-top: 10vh;
+  padding-bottom: 38vh;
+  background-color: #f42267;
+}
+
+.wr-social-networks {
+  padding-top: 8vh;
+  padding-bottom: 6vh;
+  background-color: #4b2d7f;
+}
+
+.social-link {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+}
+.social-link li a {
+  margin-right: 4.1vh;
+  margin-left: 4.1vh;
+  color: #fff;
+  font-size: 27px;
+}
+.social-link li a:hover {
+  opacity: 0.7;
+}
+.social-link li span {
+  font-size: 27px;
+  color: #fff;
+}
+
+.bg-section-11-12 {
+  background-image: url("../../media/bg/bg-section-2-3.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.company {
+  padding-top: 11.4vh;
+  padding-bottom: 5.3vh;
+}
+.company__container {
+  display: flex;
+  justify-content: space-between;
+}
+.company__kinds {
+  min-width: 415px;
+  display: flex;
+  justify-content: space-between;
+}
+.company__workers {
+  max-height: 465px;
+  max-width: 605px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.company__wrapper-bg-img {
+  margin: 1vh;
+  width: 280px;
+  height: 215px;
+  border-radius: 20px;
+}
+.company__wrapper-bg-img.first {
+  background: url("../../media/our workers/1.jpg") no-repeat center;
+}
+.company__wrapper-bg-img.second {
+  background: url("../../media/our workers/2.jpg") no-repeat center;
+}
+.company__wrapper-bg-img.third {
+  background: url("../../media/our workers/3.jpg") no-repeat center;
+}
+.company__wrapper-bg-img.fourth {
+  background: url("../../media/our workers/4.jpg") no-repeat center;
+}
+
+.title-company {
+  font-family: "PopBold", sans-serif;
+  font-size: 25px;
+  color: #4b2d7f;
+}
+
+.occupation {
+  margin-bottom: 9vh;
+}
+.occupation__title {
+  margin-bottom: 2vh;
+}
+.occupation__works {
+  padding-left: 0;
+  margin-left: 1.2vh;
+}
+.occupation__works li a {
+  font-family: "PopSemiBold", sans-serif;
+  color: #171717;
+}
+.occupation__works li a:hover {
+  opacity: 0.7;
+}
+
+footer {
+  padding-top: 5.5vh;
+  padding-bottom: 5.5vh;
+  position: relative;
+}
+footer .container-custom {
+  display: flex;
+  justify-content: center;
+}
+footer::after {
+  content: "";
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  position: absolute;
+  background-color: #f6f6f6;
+  z-index: -5;
+}
+
+.footer-list {
+  display: flex;
+  padding-left: 0;
+}
+.footer-list li {
+  margin-right: 1.8vh;
+}
+.footer-list li span {
+  font-family: "PopSemiBold", sans-serif;
+  font-size: 18px;
+  color: #171717;
+}
+.footer-list li a {
+  font-family: "PopSemiBold", sans-serif;
+  font-size: 18px;
+  color: #171717;
+}
+.footer-list li a:hover {
+  opacity: 0.7;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -52,8 +52,8 @@ header {
         width: 72px;
     }
     &:hover {
+        opacity: 0.8;
         color: $hover-color-font-a;
-        text-decoration: none;
     }
 }
 
@@ -79,7 +79,7 @@ header {
             font-family: "MontsSemiBold", sans-serif;
             color: $color-font-button;
             &:hover {
-                text-decoration: none;
+                opacity: 0.7;
             }
         }
     }
@@ -91,6 +91,9 @@ header {
     padding: 0; 
     img {
         width: 30px;
+    }
+    &:hover {
+        opacity: 0.7;
     }
 }
 
@@ -146,10 +149,16 @@ header {
     .red-button {
         background-color: #f42267;
         margin-left: 6.7vh;
+        &:hover {
+            color: #d6d4d4;
+        }
      }
     .violet-button {
         background-color: #5e3088;
         margin-left: 2.7vh;
+        &:hover {
+            color: #d6d4d4;
+        }
     }
 }
 
@@ -637,45 +646,12 @@ background-color: #f1f1f1;
     ul {
         display: flex;
         justify-content: center;
+        margin-bottom: 9.6vh;
         li {
             margin-left: 5vh;
         }
     }
 }
-
-// .wr-works-grid {
-//     #tabContainer {
-//     }
-//     #tabs {
-//         ul {
-//             margin-bottom: 2.2vh;
-//             padding-left: 0;
-//             display: flex;
-//             justify-content: center;
-//             li {
-//                 margin-right: 1px; 
-//                 display: flex;
-//                 justify-content: center;
-//                 align-items: center;
-//                 height: 45px;
-//                 width: 130px;
-//                 font-family: "MontsSemiBold", sans-serif;
-//                 font-size: 14px;
-//                 text-transform: uppercase;
-//                 border-radius: 33px; 
-//                 &:hover {
-//                     cursor: pointer;
-//                 }
-//                 &.tabActiveHeader{
-//                     background-color: $color-button;
-//                     cursor: pointer;
-//                     color: $color-font-button;
-//                 }
-//             }       
-//         }
-//     }
-// }
-
 
 .wr-works-button {
     display: flex;
@@ -793,6 +769,163 @@ background-color: #f1f1f1;
     font-size: 25px;
     word-spacing: -2px;
 }
+
+
+//section-9
+
+.wr-form {
+    padding-top: 10vh;
+    padding-bottom: 38vh;
+    background-color: #f42267;
+}
+
+//section-10
+
+.wr-social-networks {
+    padding-top: 8vh;
+    padding-bottom: 6vh;
+    background-color: #4b2d7f;
+}
+
+.social-link {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    li {
+        a {
+            margin-right: 4.1vh;
+            margin-left: 4.1vh;
+            color: $first-font-color;
+            font-size: 27px;
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+        span {
+            font-size: 27px;
+            color: $first-font-color;
+        }
+    }
+}
+
+//section-11
+
+.bg-section-11-12 {
+    background-image: url("../../media/bg/bg-section-2-3.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.company {
+    padding-top: 11.4vh;
+    padding-bottom: 5.3vh;
+     &__container {
+         display: flex;
+         justify-content: space-between;
+     }
+     &__kinds {
+         min-width: 415px;
+         display: flex;
+         justify-content: space-between;
+     }
+     &__workers {
+        max-height: 465px;
+        max-width: 605px;
+        display: flex;
+        flex-wrap: wrap;
+     }
+     &__wrapper-bg-img {
+        margin: 1vh;
+        width: 280px;
+        height: 215px;
+        border-radius: 20px;
+        &.first {
+            background: url("../../media/our workers/1.jpg") no-repeat center;
+        }
+        &.second {
+            background: url("../../media/our workers/2.jpg") no-repeat center;
+        }
+        &.third {
+            background: url("../../media/our workers/3.jpg") no-repeat center;
+        }
+        &.fourth {
+            background: url("../../media/our workers/4.jpg") no-repeat center;
+        }
+     }
+}
+
+.title-company {
+    font-family: "PopBold", sans-serif;
+    font-size: 25px;
+    color: #4b2d7f;
+}
+
+.occupation {
+    margin-bottom: 9vh;
+    &__title {
+        margin-bottom: 2vh;
+    }
+    &__works {
+        padding-left: 0;
+        margin-left: 1.2vh;
+        li {
+            a {
+                font-family: "PopSemiBold", sans-serif;
+                color:  #171717;
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}
+
+//section-12
+
+footer {
+    padding-top: 5.5vh;
+    padding-bottom: 5.5vh;
+    position: relative;
+    .container-custom {
+        display: flex;
+        justify-content: center;
+    }
+    &::after {
+        content: "";
+        right: 0;
+        left: 0;
+        bottom: 0;
+        top: 0;
+        position: absolute;
+        background-color: #f6f6f6;
+        z-index: -5;
+    }
+}
+
+.footer-list {
+    display: flex;
+    padding-left: 0;
+    li {
+        margin-right: 1.8vh;
+        span {
+        font-family: "PopSemiBold", sans-serif;
+        font-size: 18px;
+        color: #171717;
+        }
+        a {
+        font-family: "PopSemiBold", sans-serif;
+        font-size: 18px;
+        color: #171717;
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+    }
+}
+
+
+
+
 
 @import "./media"; //всегда в конце
 
