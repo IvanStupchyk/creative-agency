@@ -228,60 +228,92 @@
                     rhoncus lorem ipsum ese terds.Lorem ipsum dolor sit am et, consec tetur adipi scing
                     elit.</p>
             </div>
-            <div class="wr-works-grid">
-                <div class="tabs-2">
-                    <div class="tabs-3">
-                        <ul>
-                            <li id="tabHeader_1">Web design</li>
-                            <li id="tabHeader_2">Mobile App</li>
-                            <li id="tabHeader_3">Branding</li>
-                            <li id="tabHeader_4">Branding</li>
-                        </ul>
+
+            <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')">Web design</button>
+                <button class="btn" onclick="filterSelection('Mobile App')">Mobile App</button>
+                <button class="btn" onclick="filterSelection('Branding')">Branding</button>
+                <button class="btn" onclick="filterSelection('check')">Branding</button>
+            </div>
+            <div class="row">
+                <div class="column Mobile App">
+                    <div class="content">
+                        <picture>
+                            <source srcset="./media/works-preview/1.webp" tape="image/webp">
+                            <img src="./media/works-preview/1.jpg" alt="bottle">
+                        </picture>
                     </div>
                 </div>
-                <div class="wr-works-grid-examples">
-                    <picture>
-                        <source srcset="./media/works-preview/1.webp" tape="image/webp">
-                        <img src="./media/works-preview/1.jpg" alt="bottle">
-                    </picture>
-                    <picture>
-                        <source srcset="./media/works-preview/2.webp" tape="image/webp">
-                        <img src="./media/works-preview/2.jpg" alt="cup">
-                    </picture>
-                    <picture>
-                        <source srcset="./media/works-preview/3.webp" tape="image/webp">
-                        <img src="./media/works-preview/3.jpg" alt="book">
-                    </picture>
-                    <picture>
-                        <source srcset="./media/works-preview/4.webp" tape="image/webp">
-                        <img src="./media/works-preview/4.jpg" alt="t-shit">
-                    </picture>
-                    <picture>
-                        <source srcset="./media/works-preview/5.webp" tape="image/webp">
-                        <img src="./media/works-preview/5.jpg" alt="box">
-                    </picture>
-                    <picture>
-                        <source srcset="./media/works-preview/6.webp" tape="image/webp">
-                        <img src="./media/works-preview/6.jpg" alt="bottles">
-                    </picture>
-                    <picture>
-                        <source srcset="./media/works-preview/7.webp" tape="image/webp">
-                        <img src="./media/works-preview/7.jpg" alt="check">
-                    </picture>
-                    <picture>
-                        <source srcset="./media/works-preview/8.webp" tape="image/webp">
-                        <img src="./media/works-preview/8.jpg" alt="bag">
-                    </picture>
-                    <picture>
-                        <source srcset="./media/works-preview/9.webp" tape="image/webp">
-                        <img src="./media/works-preview/9.jpg" alt="body cream">
-                    </picture>
+                <div class="column Mobile App">
+                    <div class="content">
+                        <picture>
+                            <source srcset="./media/works-preview/2.webp" tape="image/webp">
+                            <img src="./media/works-preview/2.jpg" alt="cup">
+                        </picture>
+                    </div>
                 </div>
-                <div class="wr-works-button">
-                    <a class="button-read-more" href="#">Read more</a>
+                <div class="column Mobile App">
+                    <div class="content">
+                        <picture>
+                            <source srcset="./media/works-preview/3.webp" tape="image/webp">
+                            <img src="./media/works-preview/3.jpg" alt="book">
+                        </picture>
+                    </div>
+                </div>
+
+                <div class="column Branding">
+                    <div class="content">
+                        <picture>
+                            <source srcset="./media/works-preview/4.webp" tape="image/webp">
+                            <img src="./media/works-preview/4.jpg" alt="t-shit">
+                        </picture>
+                    </div>
+                </div>
+                <div class="column Branding">
+                    <div class="content">
+                        <picture>
+                            <source srcset="./media/works-preview/5.webp" tape="image/webp">
+                            <img src="./media/works-preview/5.jpg" alt="box">
+                        </picture>
+                    </div>
+                </div>
+                <div class="column Branding">
+                    <div class="content">
+                        <picture>
+                            <source srcset="./media/works-preview/6.webp" tape="image/webp">
+                            <img src="./media/works-preview/6.jpg" alt="bottles">
+                        </picture>
+                    </div>
+                </div>
+
+                <div class="column check">
+                    <div class="content">
+                        <picture>
+                            <source srcset="./media/works-preview/7.webp" tape="image/webp">
+                            <img src="./media/works-preview/7.jpg" alt="check">
+                        </picture>
+                    </div>
+                </div>
+                <div class="column check">
+                    <div class="content">
+                        <picture>
+                            <source srcset="./media/works-preview/8.webp" tape="image/webp">
+                            <img src="./media/works-preview/8.jpg" alt="bag">
+                        </picture>
+                    </div>
+                </div>
+                <div class="column check">
+                    <div class="content">
+                        <picture>
+                            <source srcset="./media/works-preview/9.webp" tape="image/webp">
+                            <img src="./media/works-preview/9.jpg" alt="body cream">
+                        </picture>
+                    </div>
                 </div>
             </div>
-
+            <div class="wr-works-button">
+                <a class="button-read-more" href="#">Read more</a>
+            </div>
         </div>
     </section>
 
@@ -431,7 +463,7 @@
         </section>
 
         <footer>
-            <div class="container-custom"> 
+            <div class="container-custom">
                 <ul class="footer-list">
                     <li><span>&#169;2022 Theme by </span> <a href="#">psdfreebies.com</a></li>
                     <li><span>∙</span></li>
@@ -441,17 +473,12 @@
                     <li><span>∙</span></li>
                     <li><a href="#">Site Map</a></li>
                 </ul>
-                
-                
-                
-                
-                
-                
-                
-                
             </div>
         </footer>
     </div>
+
+
+
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

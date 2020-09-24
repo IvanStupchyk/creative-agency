@@ -713,6 +713,7 @@ header {
 }
 #tabs ul li:hover {
   cursor: pointer;
+  opacity: 0.7;
 }
 #tabs ul li.tabActiveHeader {
   background-color: #f42267;
@@ -1096,27 +1097,61 @@ header {
   line-height: 3.4vh;
 }
 
-.wr-works-grid-examples {
-  margin-bottom: 9.6vh;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(100px, 377px));
-  grid-template-rows: repeat(3, minmax(100px, 316px));
-  grid-gap: 33.5px;
+#myBtnContainer {
+  margin-bottom: 6.3vh;
+  display: flex;
+  justify-content: center;
 }
-.wr-works-grid-examples img {
+
+.content {
+  margin: 15px;
+  width: 380px;
+  height: 315px;
+}
+.content img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   object-position: center;
 }
 
-.tabs-3 ul {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 9.6vh;
+.row {
+  margin-bottom: 9vh;
 }
-.tabs-3 ul li {
-  margin-left: 5vh;
+
+.column {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.btn {
+  margin-right: 4vh;
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  cursor: pointer;
+  height: 45px;
+  width: 130px;
+  font-family: "MontsSemiBold", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 33px;
+}
+.btn:last-child {
+  margin-right: 0;
+}
+.btn.active {
+  background-color: #f42267;
+  color: white;
+}
+.btn:hover {
+  opacity: 0.7;
+}
+.btn:focus {
+  box-shadow: none;
 }
 
 .wr-works-button {
@@ -1138,6 +1173,9 @@ header {
   justify-content: center;
   grid-column-gap: 100px;
   grid-row-gap: 55px;
+}
+.wr-logos .container-custom a:hover {
+  opacity: 0.8;
 }
 
 .wr-clients {

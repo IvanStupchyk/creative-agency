@@ -223,8 +223,9 @@ header {
             font-size: 14px;
             text-transform: uppercase;
             border-radius: 33px; 
-            &:hover {
+            &:hover { 
                 cursor: pointer;
+                opacity: 0.7;
             }
             &.tabActiveHeader{
                 background-color: $color-button;
@@ -627,13 +628,16 @@ background-color: #f1f1f1;
    
 }
 
-.wr-works-grid-examples {
-    margin-bottom: 9.6vh;
-    display: grid;
-    grid-template-columns: repeat(3, minmax(100px, 377px));
-    grid-template-rows: repeat(3, minmax(100px, 316px));
-    // Почему для rows не работает minmax, а для columns работает?
-    grid-gap: 33.5px;
+#myBtnContainer {
+    margin-bottom: 6.3vh;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    margin: 15px;
+    width: 380px;
+    height: 315px;
     img {
         height: 100%;
         width: 100%;
@@ -641,15 +645,42 @@ background-color: #f1f1f1;
         object-position: center;
     }
 }
-
-.tabs-3 {
-    ul {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 9.6vh;
-        li {
-            margin-left: 5vh;
-        }
+.row {
+    margin-bottom: 9vh;
+}
+    
+.column {
+    display: none; 
+}
+   
+.show {
+    display: block;
+}
+  
+.btn {
+    margin-right: 4vh;
+    &:last-child {
+        margin-right: 0;
+    }
+    &.active {
+        background-color: $color-button;
+        color: white;
+    }
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    cursor: pointer;
+    height: 45px;
+    width: 130px;
+    font-family: "MontsSemiBold", sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 33px; 
+    &:hover {
+        opacity: 0.7;
+    }
+    &:focus {
+        box-shadow: none;
     }
 }
 
@@ -673,6 +704,11 @@ background-color: #f1f1f1;
         justify-content: center;
         grid-column-gap: 100px;
         grid-row-gap: 55px;
+        a {
+         &:hover {
+             opacity: 0.8;
+         }
+        }
     }
 }
 
@@ -922,6 +958,7 @@ footer {
         }
     }
 }
+
 
 
 
