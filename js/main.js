@@ -31,7 +31,7 @@ window.onload=function() {
 }
 
 // on click of one of tabs
-function displayPage() {
+  function displayPage() {
     var current = this.parentNode.getAttribute("data-current");
     //remove class of activetabheader and hide old contents
     document.getElementById("tabHeader_" + current).removeAttribute("class");
@@ -43,11 +43,16 @@ function displayPage() {
     this.setAttribute("class","tabActiveHeader");
     document.getElementById("tabpage_" + ident).style.display="block";
     this.parentNode.setAttribute("data-current",ident);
-}
+  }
 
+    $("body").on('click', '[href*="#"]', function(e){
+        var fixed_offset = 0;
+        $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1000);
+        e.preventDefault();
+      });
 
-$(document).ready(function () {
-    videoPlayer();    
+  $(document).ready(function () {
+     videoPlayer();    
 });
 
 

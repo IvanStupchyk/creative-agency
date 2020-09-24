@@ -68,11 +68,6 @@ main {
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
 li {
   list-style-type: none;
 }
@@ -421,7 +416,6 @@ button:focus {
   align-items: center;
   height: 47px;
   width: 146px;
-  font-family: "MontsReg", sans-serif;
   color: #fff;
   font-size: 15px;
   text-transform: uppercase;
@@ -1168,11 +1162,13 @@ header {
   display: grid;
   grid-template-columns: repeat(4, minmax(100px, 166px));
   grid-template-rows: repeat(2, minmax(40px, 80px));
-  align-items: center;
-  justify-items: center;
   justify-content: center;
   grid-column-gap: 100px;
   grid-row-gap: 55px;
+}
+.wr-logos .container-custom a {
+  align-self: center;
+  justify-self: center;
 }
 .wr-logos .container-custom a:hover {
   opacity: 0.8;

@@ -2,6 +2,11 @@
 @import "normalize";
 @import "base";
 @import "vars";
+// @import "node_modules/bootstrap/scss/functions";
+// @import "node_modules/bootstrap/scss/variables";
+// @import "node_modules/bootstrap/scss/mixins";
+// @import "node_modules/bootstrap/scss/grid";
+
 
 header {
     padding-top: 4.6vh;
@@ -699,13 +704,13 @@ background-color: #f1f1f1;
         display: grid;
         grid-template-columns: repeat(4, minmax(100px, 166px));
         grid-template-rows: repeat(2, minmax(40px, 80px));
-        align-items: center;
-        justify-items: center;
         justify-content: center;
         grid-column-gap: 100px;
         grid-row-gap: 55px;
         a {
-         &:hover {
+           align-self: center;
+           justify-self: center;
+           &:hover {
              opacity: 0.8;
          }
         }
