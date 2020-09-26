@@ -8,21 +8,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
-    <link rel="stylesheet" href="./styles/css/main.css">
+    <link rel="stylesheet" href="./css/app.min.css">
+    <link rel="shortcut icon" href="./media/favicons/bullhorn-solid.svg" type="image/x-icon">
 </head>
 
 <body>
+
     <section class="wr-home">
         <header>
             <div class="container-header">
-                <a class="logo" href="#">
-                    <picture>
-                        <source srcset="./media/icons/icon-logo-site.webp" tape="image/webp">
-                        <img src="./media/icons/icon-logo-site.png" alt="logo">
-                    </picture>
-                    BlueRex
-                </a>
-                <div class="wr-home-menu">
+
+                <div class="logo-left">
+                    <a href="">
+                        <picture>
+                            <source srcset="./media/images/icons/icon-logo-site.webp" tape="image/webp">
+                            <img src="./media/images/icons/icon-logo-site.png" alt="logo">
+                        </picture>
+                    </a>
+                    <a class="logo" href="#">
+                        BlueRex
+                    </a>
+
+                </div>
+                <div class="home-menu">
                     <nav class="home-navigation">
                         <ul>
                             <li><a href="#">Home</a></li>
@@ -34,10 +42,10 @@
                             <li><a href="#contant">Contact</a></li>
                         </ul>
                     </nav>
-                    <button class="wr-home-button">
+                    <button class="home-button">
                         <picture>
-                            <source srcset="./media/icons/toolbar.webp" tape="image/webp">
-                            <img src="./media/icons/toolbar.png" alt="menu">
+                            <source srcset="./media/images/icons/toolbar.webp" tape="image/webp">
+                            <img src="./media/images/icons/toolbar.png" alt="menu">
                         </picture>
                     </button>
                 </div>
@@ -45,13 +53,13 @@
         </header>
         <section class="wr-intro">
             <div class="container-preamble">
-                <p class="wr-intro-title">We are best and creative agency</p>
+                <p class="intro-title">We are best and creative agency</p>
                 <h1>We turn creative ideas into your business.</h1>
-                <p class="wr-intro-description">Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed
+                <p class="intro-description">Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed
                     sodales enim ut rhoncus lorem ipsum
                     ese terds.
                 </p>
-                <div class="wr-intro-buttons">
+                <div class="intro-buttons">
                     <a class="red-button" href="#">Our Story</a>
                     <a class="violet-button" href="#">Read More</a>
                 </div>
@@ -62,11 +70,11 @@
     <div class="bg-section-2-3">
         <section class="wr-work" id="about">
             <div class="container-custom">
-                <div class="wr-work-content">
-                    <p class="wr-work-title">Dream Big Inspire the World</p>
+                <div class="work-content">
+                    <p class="work-title">Dream Big Inspire the World</p>
                     <h2>We turn creative ideas into your business.</h2>
                     <div id="tabContainer">
-                        <div id="tabs">
+                        <div class="tabs">
                             <ul>
                                 <li id="tabHeader_1">Web design</li>
                                 <li id="tabHeader_2">Mobile App</li>
@@ -117,34 +125,37 @@
         </section>
         <section class="wr-achievements">
             <div class="container-achievements">
-                <div class="wr-achievements-projects">
-                    <picture>
-                        <source srcset="./media/icons/icon-shout.webp" tape="image/webp">
-                        <img src="./media/icons/icon-shout.png" alt="megaphone">
-                    </picture>
-                    <p class="wr-achievements-amount">500+</p>
+                <div class="achievements-projects">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path fill="currentColor"
+                            d="M487.4 315.7l-42.6-24.6c4.3-23.2 4.3-47 0-70.2l42.6-24.6c4.9-2.8 7.1-8.6 5.5-14-11.1-35.6-30-67.8-54.7-94.6-3.8-4.1-10-5.1-14.8-2.3L380.8 110c-17.9-15.4-38.5-27.3-60.8-35.1V25.8c0-5.6-3.9-10.5-9.4-11.7-36.7-8.2-74.3-7.8-109.2 0-5.5 1.2-9.4 6.1-9.4 11.7V75c-22.2 7.9-42.8 19.8-60.8 35.1L88.7 85.5c-4.9-2.8-11-1.9-14.8 2.3-24.7 26.7-43.6 58.9-54.7 94.6-1.7 5.4.6 11.2 5.5 14L67.3 221c-4.3 23.2-4.3 47 0 70.2l-42.6 24.6c-4.9 2.8-7.1 8.6-5.5 14 11.1 35.6 30 67.8 54.7 94.6 3.8 4.1 10 5.1 14.8 2.3l42.6-24.6c17.9 15.4 38.5 27.3 60.8 35.1v49.2c0 5.6 3.9 10.5 9.4 11.7 36.7 8.2 74.3 7.8 109.2 0 5.5-1.2 9.4-6.1 9.4-11.7v-49.2c22.2-7.9 42.8-19.8 60.8-35.1l42.6 24.6c4.9 2.8 11 1.9 14.8-2.3 24.7-26.7 43.6-58.9 54.7-94.6 1.5-5.5-.7-11.3-5.6-14.1zM256 336c-44.1 0-80-35.9-80-80s35.9-80 80-80 80 35.9 80 80-35.9 80-80 80z">
+                        </path>
+                    </svg>
+                    <p class="achievements-amount">500+</p>
                     <h3>Successfully completed projects</h3>
-                    <p class="wr-achievements-description">Lorem ipsum dolor sit am et, consec tetur adipi scing elit.
+                    <p class="achievements-description">Lorem ipsum dolor sit am et, consec tetur adipi scing elit.
                         Sed sodales enim ut rhoncus lorem ipsum ese terds.</p>
                 </div>
-                <div class="wr-achievements-projects">
-                    <picture>
-                        <source srcset="./media/icons/icon-shout.webp" tape="image/webp">
-                        <img src="./media/icons/icon-shout.png" alt="megaphone">
-                    </picture>
-                    <p class="wr-achievements-amount">254+</p>
+                <div class="achievements-projects">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path fill="currentColor"
+                            d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z">
+                        </path>
+                    </svg>
+                    <p class="achievements-amount">254+</p>
                     <h3>Highly specialised employees</h3>
-                    <p class="wr-achievements-description">Lorem ipsum dolor sit am et, consec tetur adipi scing elit.
+                    <p class="achievements-description">Lorem ipsum dolor sit am et, consec tetur adipi scing elit.
                         Sed sodales enim ut rhoncus lorem ipsum ese terds. </p>
                 </div>
-                <div class="wr-achievements-projects">
-                    <picture>
-                        <source srcset="./media/icons/icon-shout.webp" tape="image/webp">
-                        <img src="./media/icons/icon-shout.png" alt="megaphone">
-                    </picture>
-                    <p class="wr-achievements-amount">45+</p>
+                <div class="achievements-projects">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                        <path fill="currentColor"
+                            d="M528 448H112c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h416c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16zm64-320c-26.5 0-48 21.5-48 48 0 7.1 1.6 13.7 4.4 19.8L476 239.2c-15.4 9.2-35.3 4-44.2-11.6L350.3 85C361 76.2 368 63 368 48c0-26.5-21.5-48-48-48s-48 21.5-48 48c0 15 7 28.2 17.7 37l-81.5 142.6c-8.9 15.6-28.9 20.8-44.2 11.6l-72.3-43.4c2.7-6 4.4-12.7 4.4-19.8 0-26.5-21.5-48-48-48S0 149.5 0 176s21.5 48 48 48c2.6 0 5.2-.4 7.7-.8L128 416h384l72.3-192.8c2.5.4 5.1.8 7.7.8 26.5 0 48-21.5 48-48s-21.5-48-48-48z">
+                        </path>
+                    </svg>
+                    <p class="achievements-amount">45+</p>
                     <h3>Awards around the world</h3>
-                    <p class="wr-achievements-description">Lorem ipsum dolor sit am et, consec tetur adipi scing elit.
+                    <p class="achievements-description">Lorem ipsum dolor sit am et, consec tetur adipi scing elit.
                         Sed sodales enim ut rhoncus lorem ipsum ese terds. </p>
                 </div>
             </div>
@@ -152,72 +163,66 @@
     </div>
     <section class="wr-ad">
         <div class="container-custom">
-            <p class="wr-ad-slogan">Let's Grow Together</p>
+            <p class="ad-slogan">Let's Grow Together</p>
             <h4>We turn creative ideas into your business.</h4>
-            <p class="wr-ad-description">Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales
+            <p class="ad-description">Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales
                 enim ut rhoncus lorem ipsum ese terds. Lorem ipsum dolor sit am et, consec tetur adipi scing elit. </p>
             <a class="button-read-more" href="#">Read more</a>
         </div>
     </section>
     <section class="wr-media" id="features">
         <div class="container-custom">
-            <div class="wr-media-description">
-                <p class="wr-media-title">We are best and creative agency</p>
+            <div class="media-description">
+                <p class="media-title">We are best and creative agency</p>
                 <h5>We turn creative ideas into your business.</h5>
-                <p class="wr-media-about">Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim
+                <p class="media-about">Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim
                     ut rhoncus lorem ipsum
                     ese terds. Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus
                     lorem ipsum ese terds.</p>
-                <div class="wr-media-block">
-                    <div class="wr-media-block-half">
+                <div class="media-block">
+                    <div class="media-block-half">
                         <picture class="icon-conversation">
-                            <source srcset="./media/icons/icon-conversation.webp" tape="image/webp">
-                            <img src="./media/icons/icon-conversation.png" alt="icon conversation">
+                            <source srcset="./media/images/icons/icon-conversation.webp" tape="image/webp">
+                            <img src="./media/images/icons/icon-conversation.png" alt="icon conversation">
                         </picture>
-                        <p class="wr-media-block-title">Graphic Design</p>
-                        <p class="wr-media-block-description">Lorem ipsum dolor sit am et, consec tetur adipi scing
+                        <p class="media-block-title">Graphic Design</p>
+                        <p class="media-block-description">Lorem ipsum dolor sit am et, consec tetur adipi scing
                             elit. Sed sodales enim ut rhoncus lorem
                             ipsum ese terds.</p>
                         <a class="button-read-more" href="#">Read more</a>
                     </div>
-                    <div class="wr-media-block-half">
+                    <div class="media-block-half">
                         <picture class="icon-color-shout">
-                            <source srcset="./media/icons/icon-color-shout.webp" tape="image/webp">
-                            <img src="./media/icons/icon-color-shout.png" alt="megaphone">
+                            <source srcset="./media/images/icons/icon-color-shout.webp" tape="image/webp">
+                            <img src="./media/images/icons/icon-color-shout.png" alt="megaphone">
                         </picture>
-                        <p class="wr-media-block-title">Graphic Design</p>
-                        <p class="wr-media-block-description">Lorem ipsum dolor sit am et, consec tetur adipi scing
+                        <p class="media-block-title">Graphic Design</p>
+                        <p class="media-block-description">Lorem ipsum dolor sit am et, consec tetur adipi scing
                             elit. Sed sodales enim ut rhoncus lorem
                             ipsum ese terds.</p>
                         <a class="button-read-more" href="#">Read more</a>
                     </div>
                 </div>
             </div>
-            <div class="action-block">
-                <video id="video" loop poster="./media/video/bg-video.jpg" class="blur-video">
+            <div class="video">
+                <video id="video" loop poster="./media/images/video/bg-video.jpg">
                     <source src="./media/video/Norway.mp4.mp4" type="video/mp4">
                 </video>
-                <button class="button-play-video" role="button"></button>
-                <div class="action-block-controls">
-                    <button type="button" id="play-pause" class="play-pause">
-                        <img class="play-video" src="./media/icons/play-icon.png" alt="icon play video">
-                        <img class="pause-video" src="./media/icons/pause-icon.png" alt="icon-pause-video">
-                    </button>
-                    <div class="range-video">
-                        <input type="range" id="seek-bar" value="0">
-                        <div class="active-range"></div>
+                <div class="controls">
+                    <progress id="progress" max="100" value="0"></progress>
+                    <div class="buttons">
+                        <button id="play-pause" class="play-pause"></button>
+                        <button id="stop" class="stop"></button>
+                        <button id="mute" class="mute"></button>
                     </div>
-                    <button type="button" id="mute" class="video-mute">
-                        <img class="on-mute" src="./media/icons/mute-on-small.png" alt="video-on-mute">
-                        <img class="off-mute" src="./media/icons/mute-small.png" alt="video-off-mute">
-                    </button>
                 </div>
+                <button class="btn-play-main"></button>
             </div>
         </div>
     </section>
     <section class="wr-works" id="product">
         <div class="container-custom">
-            <div class="wr-works-head">
+            <div class="works-head">
                 <h6>Our Recent Work</h6>
                 <p> Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed
                     sodales
@@ -229,90 +234,72 @@
                     elit.</p>
             </div>
             <!-- bootstrap grid -->
-            <div id="myBtnContainer">
-                <button class="btn active" onclick="filterSelection('all')">Web design</button>
-                <button class="btn" onclick="filterSelection('Mobile App')">Mobile App</button>
-                <button class="btn" onclick="filterSelection('Branding')">Branding</button>
-                <button class="btn" onclick="filterSelection('check')">Branding</button>
-            </div>
-            <div class="row">
-                <div class="column Mobile App">
-                    <div class="content">
+            <div class="sorting-pictures">
+                <div id="myBtnContainer">
+                    <button class="btn active" onclick="filterSelection('all')">Web design</button>
+                    <button class="btn" onclick="filterSelection('mobile-app')">Mobile App</button>
+                    <button class="btn" onclick="filterSelection('branding')">Branding</button>
+                    <button class="btn" onclick="filterSelection('check')">Branding</button>
+                </div>
+                <div class="row">
+                    <div class="column mobile-app">
                         <picture>
-                            <source srcset="./media/works-preview/1.webp" tape="image/webp">
-                            <img src="./media/works-preview/1.jpg" alt="bottle">
+                            <source srcset="./media/images/works-preview/1.webp" tape="image/webp">
+                            <img src="./media/images/works-preview/1.jpg" alt="bottle">
+                        </picture>
+                    </div>
+                    <div class="column mobile-app">
+                        <picture>
+                            <source srcset="./media/images/works-preview/2.webp" tape="image/webp">
+                            <img src="./media/images/works-preview/2.jpg" alt="cup">
+                        </picture>
+                    </div>
+                    <div class="column mobile-app">
+                        <picture>
+                            <source srcset="./media/images/works-preview/3.webp" tape="image/webp">
+                            <img src="./media/images/works-preview/3.jpg" alt="book">
+                        </picture>
+                    </div>
+                    <div class="column branding">
+                        <picture>
+                            <source srcset="./media/images/works-preview/4.webp" tape="image/webp">
+                            <img src="./media/images/works-preview/4.jpg" alt="t-shit">
+                        </picture>
+                    </div>
+                    <div class="column branding">
+                        <picture>
+                            <source srcset="./media/images/works-preview/5.webp" tape="image/webp">
+                            <img src="./media/images/works-preview/5.jpg" alt="box">
+                        </picture>
+                    </div>
+                    <div class="column branding">
+                        <picture>
+                            <source srcset="./media/images/works-preview/6.webp" tape="image/webp">
+                            <img src="./media/images/works-preview/6.jpg" alt="bottles">
+                        </picture>
+                    </div>
+                    <div class="column check">
+                        <picture>
+                            <source srcset="./media/images/works-preview/7.webp" tape="image/webp">
+                            <img src="./media/images/works-preview/7.jpg" alt="check">
+                        </picture>
+                    </div>
+                    <div class="column check">
+                        <picture>
+                            <source srcset="./media/images/works-preview/8.webp" tape="image/webp">
+                            <img src="./media/images/works-preview/8.jpg" alt="bag">
+                        </picture>
+                    </div>
+                    <div class="column check">
+                        <picture>
+                            <source srcset="./media/images/works-preview/9.webp" tape="image/webp">
+                            <img src="./media/images/works-preview/9.jpg" alt="body cream">
                         </picture>
                     </div>
                 </div>
-                <div class="column Mobile App">
-                    <div class="content">
-                        <picture>
-                            <source srcset="./media/works-preview/2.webp" tape="image/webp">
-                            <img src="./media/works-preview/2.jpg" alt="cup">
-                        </picture>
-                    </div>
+                <div class="wr-works-button">
+                    <a class="button-read-more" href="gallery.html">View The Grid</a>
                 </div>
-                <div class="column Mobile App">
-                    <div class="content">
-                        <picture>
-                            <source srcset="./media/works-preview/3.webp" tape="image/webp">
-                            <img src="./media/works-preview/3.jpg" alt="book">
-                        </picture>
-                    </div>
-                </div>
-
-                <div class="column Branding">
-                    <div class="content">
-                        <picture>
-                            <source srcset="./media/works-preview/4.webp" tape="image/webp">
-                            <img src="./media/works-preview/4.jpg" alt="t-shit">
-                        </picture>
-                    </div>
-                </div>
-                <div class="column Branding">
-                    <div class="content">
-                        <picture>
-                            <source srcset="./media/works-preview/5.webp" tape="image/webp">
-                            <img src="./media/works-preview/5.jpg" alt="box">
-                        </picture>
-                    </div>
-                </div>
-                <div class="column Branding">
-                    <div class="content">
-                        <picture>
-                            <source srcset="./media/works-preview/6.webp" tape="image/webp">
-                            <img src="./media/works-preview/6.jpg" alt="bottles">
-                        </picture>
-                    </div>
-                </div>
-
-                <div class="column check">
-                    <div class="content">
-                        <picture>
-                            <source srcset="./media/works-preview/7.webp" tape="image/webp">
-                            <img src="./media/works-preview/7.jpg" alt="check">
-                        </picture>
-                    </div>
-                </div>
-                <div class="column check">
-                    <div class="content">
-                        <picture>
-                            <source srcset="./media/works-preview/8.webp" tape="image/webp">
-                            <img src="./media/works-preview/8.jpg" alt="bag">
-                        </picture>
-                    </div>
-                </div>
-                <div class="column check">
-                    <div class="content">
-                        <picture>
-                            <source srcset="./media/works-preview/9.webp" tape="image/webp">
-                            <img src="./media/works-preview/9.jpg" alt="body cream">
-                        </picture>
-                    </div>
-                </div>
-            </div>
-            <div class="wr-works-button">
-                <a class="button-read-more" href="#">Read more</a>
             </div>
         </div>
     </section>
@@ -321,50 +308,50 @@
         <div class="container-custom">
             <a href="#">
                 <picture>
-                    <source srcset="./media/logo/cisco.webp" tape="image/webp">
-                    <img src="./media/logo/cisco.png" alt="logo cisco">
+                    <source srcset="./media/images/logo/cisco.webp" tape="image/webp">
+                    <img src="./media/images/logo/cisco.png" alt="logo cisco">
                 </picture>
             </a>
             <a href="#">
                 <picture>
-                    <source srcset="./media/logo/adidas.webp" tape="image/webp">
-                    <img src="./media/logo/adidas.png" alt="logo adidas">
+                    <source srcset="./media/images/logo/adidas.webp" tape="image/webp">
+                    <img src="./media/images/logo/adidas.png" alt="logo adidas">
                 </picture>
             </a>
             <a href="#">
                 <picture>
-                    <source srcset="./media/logo/lenovo.webp" tape="image/webp">
-                    <img src="./media/logo/lenovo.png" alt="logo lenovo">
+                    <source srcset="./media/images/logo/lenovo.webp" tape="image/webp">
+                    <img src="./media/images/logo/lenovo.png" alt="logo lenovo">
                 </picture>
             </a>
             <a href="#">
                 <picture>
-                    <source srcset="./media/logo/disney.webp" tape="image/webp">
-                    <img src="./media/logo/disney.png" alt="logo disney">
+                    <source srcset="./media/images/logo/disney.webp" tape="image/webp">
+                    <img src="./media/images/logo/disney.png" alt="logo disney">
                 </picture>
             </a>
             <a href="#">
                 <picture>
-                    <source srcset="./media/logo/amazon.webp" tape="image/webp">
-                    <img src="./media/logo/amazon.png" alt="logo amazon">
+                    <source srcset="./media/images/logo/amazon.webp" tape="image/webp">
+                    <img src="./media/images/logo/amazon.png" alt="logo amazon">
                 </picture>
             </a>
             <a href="#">
                 <picture>
-                    <source srcset="./media/logo/puma.webp" tape="image/webp">
-                    <img src="./media/logo/puma.png" alt="logo puma">
+                    <source srcset="./media/images/logo/puma.webp" tape="image/webp">
+                    <img src="./media/images/logo/puma.png" alt="logo puma">
                 </picture>
             </a>
             <a href="#">
                 <picture>
-                    <source srcset="./media/logo/apple.webp" tape="image/webp">
-                    <img src="./media/logo/apple.png" alt="logo apple">
+                    <source srcset="./media/images/logo/apple.webp" tape="image/webp">
+                    <img src="./media/images/logo/apple.png" alt="logo apple">
                 </picture>
             </a>
             <a href="#">
                 <picture>
-                    <source srcset="./media/logo/mini.webp" tape="image/webp">
-                    <img src="./media/logo/mini.png" alt="logo mini cooper">
+                    <source srcset="./media/images/logo/mini.webp" tape="image/webp">
+                    <img src="./media/images/logo/mini.png" alt="logo mini cooper">
                 </picture>
             </a>
         </div>
@@ -372,16 +359,16 @@
 
     <section class="wr-clients" id="reviews">
         <div class="container-custom">
-            <p class="wr-clients-slogan">Our Happy Client</p>
-            <p class="wr-clients-heading">Testimonials</p>
-            <p class="wr-clients-description"><span>“</span>Lorem ipsum dolor sit am et, consec tetur adipi scing elit.
+            <p class="clients-slogan">Our Happy Client</p>
+            <p class="clients-heading">Testimonials</p>
+            <p class="clients-description"><span>“</span>Lorem ipsum dolor sit am et, consec tetur adipi scing elit.
                 Sed sodales enim ut rhoncus
                 lorem ipsum ese terds. Lorem ipsum dolor sit am et, consec tetur adipi scing elit.</p>
             <picture>
-                <source srcset="./media/icons/stars-section-8.webp" tape="image/webp">
-                <img src="./media/icons/stars-section-8.png" alt="rating stars">
+                <source srcset="./media/images/icons/stars-section-8.webp" tape="image/webp">
+                <img src="./media/images/icons/stars-section-8.png" alt="rating stars">
             </picture>
-            <p class="wr-clients-full-name">Mr. John Doe</p>
+            <p class="clients-full-name">Mr. John Doe</p>
         </div>
     </section>
     <section class="wr-form" id="faq"></section>
@@ -389,10 +376,10 @@
     <section class="wr-social-networks" id="contant">
         <div class="container-custom">
             <ul class="social-link">
-                <li><a href="https://www.facebook.com" target="_blank">facebook</a><span>|</span></li>
-                <li><a href="https://twitter.com" target="_blank">twitter</a> <span>|</span></li>
-                <li><a href="https://www.linkedin.com" target="_blank">linkedin</a><span>|</span></li>
-                <li><a href="https://www.instagram.com" target="_blank">instagram</a><span>|</span></li>
+                <li><a href="https://www.facebook.com" target="_blank">facebook</a></li>
+                <li><a href="https://twitter.com" target="_blank">twitter</a> </li>
+                <li><a href="https://www.linkedin.com" target="_blank">linkedin</a></li>
+                <li><a href="https://www.instagram.com" target="_blank">instagram</a></li>
                 <li><a href="https://www.behance.net" target="_blank">behance</a></li>
             </ul>
         </div>
@@ -476,18 +463,12 @@
             </div>
         </footer>
     </div>
-
-
-
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <script src="./js/main.js"></script>
+    <script src="./js/app.min.js"></script>
 </body>
 
 </html>

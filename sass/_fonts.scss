@@ -1,0 +1,53 @@
+@font-face {
+    font-family: "MontsReg";
+    src: url("../fonts/montserrat-regular-webfont.woff2") format("woff2"),
+    url("../fonts/montserrat-regular-webfont.woff") format("woff"),
+    url("../fonts/Montserrat-Regular.ttf") format("ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "MontsLight";
+    src: url("../fonts/montserrat-light-webfont.woff2") format("woff2"),
+    url("../fonts/montserrat-light-webfont.woff") format("woff"),
+    url("../fonts/Montserrat-Light.ttf") format("ttf");
+    font-style: italic;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "MontsSemiBold";
+    src: url("../fonts/montserrat-semibold-webfont.woff2") format("woff2"),
+    url("../fonts/montserrat-semibold-webfont.woff") format("woff"),
+    url("../fonts/Montserrat-SemiBold.ttf") format("ttf");
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "PopBold";
+    src: url("../fonts/poppins-bold-webfont.woff2") format("woff2"),
+    url("../fonts/poppins-bold-webfont.woff") format("woff"),
+    url("../fonts/Poppins-Bold.ttf") format("ttf");
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "PopSemiBold";
+    src: url("../fonts/poppins-semibold-webfont.woff2") format("woff2"),
+    url("../fonts/poppins-semibold-webfont.woff") format("woff"),
+    url("../fonts/Poppins-SemiBold.ttf") format("ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "PalatLin";
+    src: url("../fonts/PalatinoLinotype.woff2") format("woff2"),
+    url("../fonts/PalatinoLinotype.woff") format("woff"),
+    url("../fonts/Palatino\ Linotype.ttf") format("ttf");
+    font-style: italic;
+    font-weight: 100;
+}

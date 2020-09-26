@@ -13,6 +13,12 @@
     margin: 0 auto;
 }
 
+.gallery__container {
+    max-width: 1600px;
+    box-sizing: border-box;
+    padding: 0 15px;
+    margin: 0 auto;
+}
 body {
     font-family: $basic-font-family;
     background-color: #fff;
@@ -40,6 +46,7 @@ button {
 
 
 .button-read-more {
+    padding-top: 2px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,7 +60,8 @@ button {
     background-color: $color-button;
     &:hover {
         text-decoration: none;
-        color: #d6d4d4;;
+        color: #4b2d7f;
+        font-weight: bold;
     }
     &:focus {
         background-color: $color-button-focus;
@@ -110,6 +118,7 @@ h5 {
 }
 
 h6 {
+    margin-top: 0;
     margin-bottom: 3vh;
     max-width: 500px;
     font-family: "MontsSemiBold";
