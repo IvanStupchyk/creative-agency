@@ -5,16 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BlueRex</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
     <link rel="stylesheet" href="./css/app.min.css">
     <link rel="shortcut icon" href="./media/favicons/bullhorn-solid.svg" type="image/x-icon">
 </head>
 
 <body>
-
-    <section class="wr-home">
-        <header>
+    <section class="wr-home" id="home">
+        <header class="header">
             <div class="container-header">
-
+                <div class="logo-left">
+                    <a href="">
+                        <picture>
+                            <source srcset="./media/images/icons/icon-logo-site.webp" tape="image/webp">
+                            <img src="./media/images/icons/icon-logo-site.png" alt="logo">
+                        </picture>
+                    </a>
+                    <a class="logo" href="#home">
+                        BlueRex
+                    </a>
+                </div>
+                <div class="header-menu">
+                    <nav class="menu-desktop" id="menu-desktop">
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#product">Product</a></li>
+                            <li><a href="#reviews">Reviews</a></li>
+                            <li><a href="#faq">Faq</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <button class="home-button">
+                        <picture>
+                            <source srcset="./media/images/icons/toolbar.webp" tape="image/webp">
+                            <img src="./media/images/icons/toolbar.png" alt="menu">
+                        </picture>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <!-- <header>
+            <div class="container-header">
                 <div class="logo-left">
                     <a href="">
                         <picture>
@@ -25,12 +60,11 @@
                     <a class="logo" href="#">
                         BlueRex
                     </a>
-
                 </div>
                 <div class="home-menu">
-                    <nav class="home-navigation">
+                    <nav class="home-navigation" id="menu-desktop">
                         <ul>
-                            <li><a href="#">Home</a></li>
+                            <li><a href="#home">Home</a></li>
                             <li><a href="#about">About</a></li>
                             <li><a href="#features">Features</a></li>
                             <li><a href="#product">Product</a></li>
@@ -47,7 +81,7 @@
                     </button>
                 </div>
             </div>
-        </header>
+        </header> -->
         <section class="wr-intro">
             <div class="container-preamble">
                 <p class="intro-title">We are best and creative agency</p>
@@ -383,63 +417,58 @@
     </section>
 
     <div class="bg-section-11-12">
-        <!-- БЭМ -->
-        <section class="company">
-            <div class="company__container">
-                <div class="company__kinds">
-                    <div>
-                        <div class="occupation">
-                            <p class="occupation__title title-company">Company</p>
-                            <ul class="occupation__works">
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Approach</a></li>
-                                <li><a href="#">Sustainability</a></li>
-                                <li><a href="#">Careers</a></li>
-                                <li><a href="#">News</a></li>
-                            </ul>
-                        </div>
-                        <div class="occupation">
-                            <p class="occupation__title title-company">Company</p>
-                            <ul class="occupation__works">
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Approach</a></li>
-                                <li><a href="#">Sustainability</a></li>
-                                <li><a href="#">Careers</a></li>
-                                <li><a href="#">News</a></li>
-                            </ul>
-                        </div>
+        <section class="wr-company" id="contact">
+            <div class="company-container">
+                <div class="company-kids">
+                    <div class="occupation">
+                        <p class="title-company">Company</p>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Approach</a></li>
+                            <li><a href="#">Sustainability</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">News</a></li>
+                        </ul>
                     </div>
-                    <div>
-                        <div class="occupation">
-                            <p class="occupation__title title-company">Company</p>
-                            <ul class="occupation__works">
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Approach</a></li>
-                                <li><a href="#">Sustainability</a></li>
-                                <li><a href="#">Careers</a></li>
-                                <li><a href="#">News</a></li>
-                            </ul>
-                        </div>
-                        <div class="occupation">
-                            <p class="occupation__title title-company">Company</p>
-                            <ul class="occupation__works">
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Approach</a></li>
-                                <li><a href="#">Sustainability</a></li>
-                                <li><a href="#">Careers</a></li>
-                                <li><a href="#">News</a></li>
-                            </ul>
-                        </div>
+                    <div class="occupation">
+                        <p class="title-company">Company</p>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Approach</a></li>
+                            <li><a href="#">Sustainability</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">News</a></li>
+                        </ul>
+                    </div>
+                    <div class="occupation">
+                        <p class="title-company">Company</p>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Approach</a></li>
+                            <li><a href="#">Sustainability</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">News</a></li>
+                        </ul>
+                    </div>
+                    <div class="occupation">
+                        <p class="title-company">Company</p>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Approach</a></li>
+                            <li><a href="#">Sustainability</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">News</a></li>
+                        </ul>
                     </div>
                 </div>
-                <div class="company__workers">
-                    <div class="company__wrapper-bg-img first">
+                <div class="company-workers">
+                    <div class="company-wrapper-bg-img first">
                     </div>
-                    <div class="company__wrapper-bg-img second">
+                    <div class="company-wrapper-bg-img second">
                     </div>
-                    <div class="company__wrapper-bg-img third">
+                    <div class="company-wrapper-bg-img third">
                     </div>
-                    <div class="company__wrapper-bg-img fourth">
+                    <div class="company-wrapper-bg-img fourth">
                     </div>
 
                 </div>
@@ -460,6 +489,10 @@
             </div>
         </footer>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <script src="./js/app.min.js"></script>
 </body>
