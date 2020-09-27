@@ -503,7 +503,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  height: 12vh;
+  height: 100px;
 }
 header .container-header {
   display: flex;
@@ -536,7 +536,7 @@ header .container-header {
 
 .header-fixed {
   position: fixed;
-  background-color: #910c38;
+  background-color: #53225e;
   z-index: 100;
   transition: 0.8s;
 }
@@ -993,9 +993,6 @@ header .container-header {
   content: "";
   background: url("../media/images/icons/mute-on-small.png") center/cover no-repeat;
 }
-.video:hover .controls {
-  transform: translateY(0);
-}
 .video video {
   height: 100%;
   width: 100%;
@@ -1003,6 +1000,9 @@ header .container-header {
 }
 .video .button-main-hidden {
   display: none;
+}
+.video:hover .controls.show-container {
+  transform: translateY(0);
 }
 
 .btn-play-main {
@@ -1132,6 +1132,11 @@ header .container-header {
 }
 .wr-logos .container-custom a:hover {
   opacity: 0.8;
+}
+.wr-logos .container-custom a svg {
+  height: 120px;
+  width: 155px;
+  color: #fff;
 }
 
 .wr-clients {
