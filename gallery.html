@@ -5,49 +5,213 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/app.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="./css/grid-page/app.min.css">
     <link rel="icon" type="image/svg+xml" href="./media/images/favicons/pixels.svg">
 </head>
 
 <body>
+
     <section class="gallery">
         <div class="gallery__container">
             <div class="grid">
-                <p>Our Recent Work</p>
-                <div class="grid__content first">
-                    <span>bottle</span>
-                </div>
-                <div class="grid__content second">
-                    <span>cup</span>
-                </div>
-                <div class="grid__content third">
-                    <span>book</span>
-                </div>
-                <div class="grid__content fourth">
-                    <span>t-shit</span>
-                </div>
-                <div class="grid__content fifth">
-                    <span>box</span>
-                </div>
-                <div class="grid__content sixth">
-                    <span>bottles</span>
-                </div>
-                <div class="grid__content seventh">
-                    <span>check</span>
-                </div>
-                <div class="grid__content eighth">
-                    <span>bag</span>
-                </div>
-                <div class="grid__content ninth">
-                    <span>body cream</span>
-                </div>
-                <div class="grid__button">
-                    <a class="button-read-more" href="index.html">all portfolio</a>
+                <h1 class="grid__title">Our Recent Work</h1>
+                <a class="grid__content grid__content_first" data-fancybox="gallery"
+                    href="./media/images/works-preview/1.jpg">
+                    <div class="grid__content-img">
+                        <picture>
+                            <source srcset="./media/images/works-preview/1.webp" type="image/webp">
+                            <img class="grid__img" src="./media/images/works-preview/1.jpg" alt="bottle">
+                        </picture>
+                    </div>
+                    <span class="grid__sign">bottle</span>
+                </a>
+                <a class="grid__content" data-fancybox="gallery" href="./media/images/works-preview/2.jpg">
+                    <div class="grid__content-img">
+                        <picture>
+                            <source srcset="./media/images/works-preview/2.webp" type="image/webp">
+                            <img class="grid__img" src="./media/images/works-preview/2.jpg" alt="cup">
+                        </picture>
+                    </div>
+                    <span class="grid__sign">cup</span>
+                </a>
+                <a class="grid__content" data-fancybox="gallery" href="./media/images/works-preview/3.jpg">
+                    <div class="grid__content-img">
+                        <picture>
+                            <source srcset="./media/images/works-preview/3.webp" type="image/webp">
+                            <img class="grid__img" src="./media/images/works-preview/3.jpg" alt="book">
+                        </picture>
+
+                    </div>
+                    <span class="grid__sign">book</span>
+                </a>
+                <a class="grid__content" data-fancybox="gallery" href="./media/images/works-preview/4.jpg">
+                    <div class="grid__content-img">
+                        <picture>
+                            <source srcset="./media/images/works-preview/4.webp" type="image/webp">
+                            <img class="grid__img" src="./media/images/works-preview/4.jpg" alt="t-shit">
+                        </picture>
+                    </div>
+                    <span class="grid__sign">t-shit</span>
+                </a>
+                <a class="grid__content grid__content_fifth" data-fancybox="gallery"
+                    href="./media/images/works-preview/5.jpg">
+                    <div class="grid__content-img">
+                        <picture>
+                            <source srcset="./media/images/works-preview/5.webp" type="image/webp">
+                            <img class="grid__img" src="./media/images/works-preview/5.jpg" alt="box">
+                        </picture>
+                    </div>
+                    <span class="grid__sign">box</span>
+                </a>
+                <a class="grid__content grid__content_sixth" data-fancybox="gallery"
+                    href="./media/images/works-preview/6.jpg">
+                    <div class="grid__content-img grid__content-img_sixth">
+                        <picture>
+                            <source srcset="./media/images/works-preview/6.webp" type="image/webp">
+                            <img class="grid__img" src="./media/images/works-preview/6.jpg" alt="bottles">
+                        </picture>
+                    </div>
+                    <span class="grid__sign">bottles</span>
+                </a>
+                <a class="grid__content" data-fancybox="gallery" href="./media/images/works-preview/7.jpg">
+                    <div class="grid__content-img">
+                        <picture>
+                            <source srcset="./media/images/works-preview/7.webp" type="image/webp">
+                            <img class="grid__img" src="./media/images/works-preview/7.jpg" alt="check">
+                        </picture>
+                    </div>
+                    <span class="grid__sign">check</span>
+                </a>
+                <a class="grid__content" data-fancybox="gallery" href="./media/images/works-preview/8.jpg">
+                    <div class="grid__content-img">
+                        <picture>
+                            <source srcset="./media/images/works-preview/8.webp" type="image/webp">
+                            <img class="grid__img" src="./media/images/works-preview/8.jpg" alt="bag">
+                        </picture>
+                    </div>
+                    <span class="grid__sign">bag</span>
+                </a>
+                <a class="grid__content" data-fancybox="gallery" href="./media/images/works-preview/9.jpg">
+                    <div class="grid__content-img">
+                        <picture>
+                            <source srcset="./media/images/works-preview/9.webp" type="image/webp">
+                            <img class="grid__img" src="./media/images/works-preview/9.jpg" alt="body cream">
+                        </picture>
+                    </div>
+                    <span class="grid__sign">body cream</span>
+                </a>
+                <div class="grid__button-container">
+                    <button class="grid__button" type="button">all portfolio</button>
                 </div>
             </div>
+            <div class="grid-show ">
+                <a class="grid__content" data-fancybox="gallery" href="./media/images/works-preview/10.jpg">
+                    <div class="grid__content-img">
+                        <picture>
+                            <source srcset="./media/images/works-preview/10.webp" type="image/webp">
+                            <img class="grid__img" src="./media/images/works-preview/10.jpg" alt="Hair Dresser">
+                        </picture>
+                    </div>
+                    <span class="grid__sign">Hair Dresser</span>
+                </a>
+                <a class="grid__content grid-show__content_second" data-fancybox="gallery"
+                    href="./media/images/works-preview/11.jpg">
+                    <div class="grid__content-img">
+                        <picture>
+                            <source srcset="./media/images/works-preview/11.webp" type="image/webp">
+                            <img class="grid__img" src="./media/images/works-preview/11.jpg" alt="post dove">
+                        </picture>
+                    </div>
+                    <span class="grid__sign">post dove</span>
+                </a>
+                <a class="grid__content grid-show__content_third" data-fancybox="gallery"
+                    href="./media/images/works-preview/12.jpg">
+                    <div class="grid__content-img">
+                        <picture>
+                            <source srcset="./media/images/works-preview/12.webp" type="image/webp">
+                            <img class="grid__img" src="./media/images/works-preview/12.jpg" alt="notebook">
+                        </picture>
 
+                    </div>
+                    <span class="grid__sign">notebook</span>
+                </a>
+                <a class="grid__content" data-fancybox="gallery" href="./media/images/works-preview/13.jpg">
+                    <div class="grid__content-img">
+                        <picture>
+                            <source srcset="./media/images/works-preview/13.webp" type="image/webp">
+                            <img class="grid__img" src="./media/images/works-preview/13.jpg" alt="camera">
+                        </picture>
+                    </div>
+                    <span class="grid__sign">camera</span>
+                </a>
+                <a class="grid__content" data-fancybox="gallery" href="./media/images/works-preview/14.jpg">
+                    <div class="grid__content-img">
+                        <picture>
+                            <source srcset="./media/images/works-preview/14.webp" type="image/webp">
+                            <img class="grid__img" src="./media/images/works-preview/14.jpg" alt="bicycle">
+                        </picture>
+                    </div>
+                    <span class="grid__sign">bicycle</span>
+                </a>
+                <a class="grid__content grid-show__content_sixth" data-fancybox="gallery"
+                    href="./media/images/works-preview/15.jpg">
+                    <div class="grid__content-img grid-show__content-img_sixth">
+                        <picture>
+                            <source srcset="./media/images/works-preview/15.webp" type="image/webp">
+                            <img class="grid__img" src="./media/images/works-preview/15.jpg" alt="exercise book">
+                        </picture>
+                    </div>
+                    <span class="grid__sign">exercise book</span>
+                </a>
+                <a class="grid__content" data-fancybox="gallery" href="./media/images/works-preview/16.jpg">
+                    <div class="grid__content-img">
+                        <picture>
+                            <source srcset="./media/images/works-preview/16.webp" type="image/webp">
+                            <img class="grid__img" src="./media/images/works-preview/16.jpg" alt="laptop">
+                        </picture>
+                    </div>
+                    <span class="grid__sign">laptop</span>
+                </a>
+                <a class="grid__content grid-show__content_eighth" data-fancybox="gallery"
+                    href="./media/images/works-preview/17.jpg">
+                    <div class="grid__content-img">
+                        <picture>
+                            <source srcset="./media/images/works-preview/17.webp" type="image/webp">
+                            <img class="grid__img" src="./media/images/works-preview/17.jpg" alt="pattern">
+                        </picture>
+                    </div>
+                    <span class="grid__sign">pattern</span>
+                </a>
+                <a class="grid__content" data-fancybox="gallery" href="./media/images/works-preview/18.jpg">
+                    <div class="grid__content-img">
+                        <picture>
+                            <source srcset="./media/images/works-preview/18.webp" type="image/webp">
+                            <img class="grid__img" src="./media/images/works-preview/18.jpg" alt="calendar">
+                        </picture>
+                    </div>
+                    <span class="grid__sign">calendar</span>
+                </a>
+                <a class="grid__content  grid-show__content_tenth" data-fancybox="gallery"
+                    href="./media/images/works-preview/2.jpg">
+                    <div class="grid__content-img">
+                        <picture>
+                            <source srcset="./media/images/works-preview/2.webp" type="image/webp">
+                            <img class="grid__img" src="./media/images/works-preview/2.jpg" alt="cup">
+                        </picture>
+                    </div>
+                    <span class="grid__sign">cup</span>
+                </a>
+                <div class="grid-show__button-container">
+                    <a class="grid__button" href="index.html">Home page</a>
+                </div>
+            </div>
         </div>
     </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="./js/app.min.js"></script>
 </body>
 
 </html>
