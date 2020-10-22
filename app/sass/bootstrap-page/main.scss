@@ -1,0 +1,118 @@
+@import "fonts";
+@import "normalize";
+@import "../../../node_modules/bootstrap/scss/_functions";
+@import "../../../node_modules/bootstrap/scss/_variables";
+@import "../../../node_modules/bootstrap/scss/_mixins";
+@import "../../../node_modules/bootstrap/scss/_reboot";
+@import "../../../node_modules/bootstrap/scss/_grid";
+@import "../../../node_modules/bootstrap/scss/_utilities";
+@import "../../../node_modules/bootstrap/scss/_forms";
+
+
+body {
+    font-family: "MontsReg", sans-serif;;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+button {
+    border: none;
+    outline: none; 
+    background-color: transparent;
+    &:focus {
+        outline: none;
+    }
+}
+
+h1 {
+    margin-bottom: 2.5vh;
+    font-family: "MontsSemiBold", sans-serif;
+    font-size: 50px;
+    word-spacing: -2px;
+    letter-spacing: -1px;
+}
+
+
+.wr-bootstrap {
+    background-color: #ececec;
+    height: 100vh;
+    img {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+.height-col {
+    height: 24vh;
+    box-sizing: border-box;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0.5vh;
+        bottom: 0;
+        left: 0.5vh;
+        background-color: #494949;
+        opacity: 0.6;
+    }
+    &:hover {
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0.5vh;
+            bottom: 0;
+            left: 0.5vh;
+            background-color: #494949;
+            opacity: 0.3;
+        }
+    }
+}
+
+.button-read-more {
+    position: relative;
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 145px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 12px; 
+    background-color: #f42267;
+    box-shadow: 0px 7px 0 0 #ff5990;
+    cursor: pointer;
+    transition: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0); 
+    -webkit-tap-highlight-color: transparent;
+    &:hover {
+        text-decoration: none;
+        box-shadow: 0px 4px 0 0 #ff5990;
+        top: 3px;
+    }
+    &:active {
+        -webkit-tap-highlight-color: rgba(0,0,0,0); 
+        -webkit-tap-highlight-color: transparent;
+        box-shadow: 0 0 0 0 #ff5990;
+        top: 7px;
+    }
+}
+
+
+@import "./media"; //всегда в конце
+

@@ -1,0 +1,82 @@
+// @import "./vars";
+
+
+@media all and (max-width: 835px) {
+    .gallery {
+        .grid {
+            &__content {
+                font-size: 17px;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 835px) {
+    .gallery {
+        .grid {
+            gap: 8px;
+            &__content {
+                font-size: 11px;
+            }
+        }
+        .grid-show {
+            gap: 8px;
+        }
+    }
+}
+
+
+@media all and (max-width: 460px) {
+    .gallery {
+        .grid {
+            &__content {
+                &_sixth {
+                    grid-row: 3;
+                }
+                &_ninth {
+                    grid-column: 3 / 5;
+                }
+            }
+            &__content-img {
+                &_sixth {
+                    height: 22vh;
+                }
+            }
+            &__title {
+                font-size: 34px;
+            }
+            &__button {
+                height: 35px;
+                width: 100px;
+                font-size: 12px;
+                box-shadow: 0px 4px 0 0 #ff5990;
+                &:hover {
+                    box-shadow: 0px 2px 0 0 #ff5990;
+                    top: 2px;
+                }
+                &:active {
+                    outline: none;
+                    box-shadow: 0 0 0 0 #ff5990;
+                    top: 4px;
+                }
+            }
+        }
+        &__container {
+            padding: 0 5px;
+        }
+    }
+}
+
+@media all and (max-width: 370px) {
+    .gallery {
+        .grid {
+            gap: 4px;
+            &__content {
+                font-size: 8px;
+            }
+        }
+        .grid-show {
+            gap: 4px;
+        }
+    }
+}

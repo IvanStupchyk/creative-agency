@@ -1,0 +1,21 @@
+ html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+  }
+  
+  body {
+    margin: 0;
+  }
+    
+a {
+    background-color: transparent;
+  }
+  
+
+  img {
+    border-style: none;
+  }
+  
+  [hidden] {
+    display: none;
+  }
