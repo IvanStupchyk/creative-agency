@@ -40,4 +40,4 @@ Contact
 ======
 Ivan Stupchik - https://github.com/IvanStupchyk 
 
-Project Link: https://ivanstupchyk.github.io/dist/creative-agency/
+Project Link: https://ivanstupchyk.github.io/creative-agency/dist
