@@ -51,4 +51,4 @@ Project Link: https://ivanstupchyk.github.io/creative-agency/dist
 
 Second page: https://ivanstupchyk.github.io/creative-agency/dist/gallery-bootstrap.html
 
-therd page: https://ivanstupchyk.github.io/creative-agency/dist/gallery.html
+Therd page: https://ivanstupchyk.github.io/creative-agency/dist/gallery.html
