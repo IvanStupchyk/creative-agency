@@ -4,7 +4,9 @@ About The Project
 * This is the site of an advertising agency. It consists of 3 pages. The main page contains Open Graph protocol, sorting of images, tabs, a fixed header, one section contains a video.
 In the mobile version, the fixed header changes to a toolbar.
 * The second page is accessed by clicking the "Read more" button in the section titled "Let's Grow Together". It uses bootstrap 4.
+`link:` https://ivanstupchyk.github.io/creative-agency/dist/gallery-bootstrap.html
 * The third page is accessible by clicking the "View The Grid" button in the section titled "Our Recent Work". It uses grid, fancybox gallery and BEM methodology
+`link:` https://ivanstupchyk.github.io/creative-agency/dist/gallery.html
 
 Built With
 ==========
@@ -43,8 +45,8 @@ Contact
 ======
 Ivan Stupchik - https://github.com/IvanStupchyk 
 
-Project Link: https://ivanstupchyk.github.io/dist/creative-agency/dist
+Project Link: https://ivanstupchyk.github.io/creative-agency/dist
 
-Second page:
+Second page: https://ivanstupchyk.github.io/creative-agency/dist/gallery-bootstrap.html
 
-therd page: 
+therd page: https://ivanstupchyk.github.io/creative-agency/dist/gallery.html
