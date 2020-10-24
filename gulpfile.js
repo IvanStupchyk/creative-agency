@@ -20,27 +20,27 @@ function browsersync() {
     })
 }
 
-function scripts() {
-    return src([
-        // 'node_modules/jquery/dist/jquery.min.js',
-        'app/js/app.js'
-    ])
-    .pipe(concat('app.min.js'))
-    .pipe(uglify())
-    .pipe(dest('app/js/'))
-    .pipe(browserSync.stream())
-}
-
 // function scripts() {
 //     return src([
-//         'node_modules/jquery/dist/jquery.min.js',
+//         // 'node_modules/jquery/dist/jquery.min.js',
 //         'app/js/app.js'
 //     ])
 //     .pipe(concat('app.min.js'))
 //     .pipe(uglify())
-//     .pipe(dest('app/js/grid-page/'))
+//     .pipe(dest('app/js/'))
 //     .pipe(browserSync.stream())
 // }
+
+function scripts() {
+    return src([
+        'node_modules/jquery/dist/jquery.min.js',
+        'app/js/app.js'
+    ])
+    .pipe(concat('app.min.js'))
+    .pipe(uglify())
+    .pipe(dest('app/js/grid-page/'))
+    .pipe(browserSync.stream())
+}
 
 
 // функция для обработки sass-файлов
