@@ -3,7 +3,8 @@ About The Project
 ===========
 * **The optimized project is located in the dist folder**
 * This is the site of an advertising agency. It consists of 3 pages. The main page contains Open Graph protocol, sorting of images, tabs, a fixed header, one section contains a video.
-In the mobile version, the fixed header changes to a toolbar.
+In the mobile version, the fixed header changes to a toolbar.  
+   `link:` https://ivanstupchyk.github.io/creative-agency/dist/
 * The second page is accessed by clicking the "Read more" button in the section titled "Let's Grow Together". It uses bootstrap 4.  
 
    `link:` https://ivanstupchyk.github.io/creative-agency/dist/gallery-bootstrap.html
