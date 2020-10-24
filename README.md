@@ -6,10 +6,8 @@ About The Project
 In the mobile version, the fixed header changes to a toolbar.  
    `link:` https://ivanstupchyk.github.io/creative-agency/dist/
 * The second page is accessed by clicking the "Read more" button in the section titled "Let's Grow Together". It uses bootstrap 4.  
-
    `link:` https://ivanstupchyk.github.io/creative-agency/dist/gallery-bootstrap.html
 * The third page is accessible by clicking the "View The Grid" button in the section titled "Our Recent Work". It uses grid, fancybox gallery and BEM methodology  
-
    `link:` https://ivanstupchyk.github.io/creative-agency/dist/gallery.html
 
 Built With
