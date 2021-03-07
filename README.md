@@ -16,7 +16,7 @@ Project is created with:
 * [Gulp 4.x.](https://gulpjs.com/)
 * [bootstrap 4](https://getbootstrap.com/)
 * [methodology BEM](https://ru.bem.info/methodology/)
-* [JavaScript](https://ru.wikipedia.org/wiki/JavaScript)
+* [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 * [jquery v3.5.1.](https://jquery.com/)
 * [Open Graph protocol](https://ogp.me/)
 * [Fancybox](https://fancyapps.com/fancybox/3/)
