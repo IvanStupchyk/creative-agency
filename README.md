@@ -45,7 +45,7 @@ Make sure these are installed first.
 
 Contact
 ======
-Ivan Stupchik - https://github.com/IvanStupchyk 
+Ivan Stupchuk - https://github.com/IvanStupchyk 
 
 Project Link: https://ivanstupchyk.github.io/creative-agency/dist
 
