@@ -15,6 +15,7 @@ Built With
 Project is created with:
 * [Gulp 4.x.](https://gulpjs.com/)
 * [bootstrap 4](https://getbootstrap.com/)
+* [SCSS](https://sass-scss.ru/guide/)
 * [methodology BEM](https://ru.bem.info/methodology/)
 * [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 * [jquery v3.5.1.](https://jquery.com/)
